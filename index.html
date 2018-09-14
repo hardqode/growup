@@ -19,14 +19,44 @@
 <header>
     <div class="container-fluid">
         <div class="row ">
+            <div class="col-auto d-lg-none">
+                <a href="#mobileMenu" data-toggle="collapse" role="button" class="mobile-menu-toggler">
+                    <svg width="25px" height="18px" class="burger-icon" viewBox="0 0 25 18" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Menu-Mobile" transform="translate(-15.000000, -20.000000)" fill="#3DD89D">
+                                <rect id="Rectangle-7" x="15" y="20" width="25" height="2" rx="1"></rect>
+                                <rect id="Rectangle-7-Copy" x="15" y="28" width="25" height="2" rx="1"></rect>
+                                <rect id="Rectangle-7-Copy-2" x="15" y="36" width="25" height="2" rx="1"></rect>
+                            </g>
+                        </g>
+                    </svg>
+
+                    <svg width="19px" height="20px" class="close-icon" viewBox="0 0 19 20" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Коворкинг-320x480-Menu" transform="translate(-18.000000, -19.000000)" fill="#3DD89D">
+                                <rect id="close1"
+                                      transform="translate(27.500000, 29.000000) rotate(45.000000) translate(-27.500000, -29.000000) "
+                                      x="15" y="28" width="25" height="2" rx="1"></rect>
+                                <rect id="close2"
+                                      transform="translate(27.500000, 29.000000) rotate(-45.000000) translate(-27.500000, -29.000000) "
+                                      x="15" y="28" width="25" height="2" rx="1"></rect>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
             <div class="col-auto logo-container">
                 <a href="index.html">
                     <img src="./assets/svg/growup-logo.svg" alt="">
                 </a>
-                <select name="city" id="city" class="select2">
-                    <option value="1">Москва</option>
-                    <option value="2">Санкт-Петербург</option>
-                </select>
+                <div class="select-container">
+                    <select name="city" id="city" class="select2">
+                        <option value="1">Москва</option>
+                        <option value="2">Санкт-Петербург</option>
+                    </select>
+                </div>
             </div>
             <div class="col-auto nav-links mx-auto">
                 <a href="#" class="link active">Коворкинг</a>
@@ -44,33 +74,170 @@
                 <a href="#">ВОЙТИ</a>
             </div>
         </div>
+        <div id="mobileMenu" class="collapse">
+            <div class="mobile-menu">
+                <div class="main-menu">
+                    <div class="link-container">
+                        <a href="#" class="h3">Коворкинг</a>
+                    </div>
+                    <div class="link-container">
+                        <a href="#" class="h3">Офисы</a>
+                    </div>
+                    <div class="link-container">
+                        <a href="#" class="h3">Переговорные</a>
+                    </div>
+                    <div class="link-container">
+                        <a href="#" class="h3">Конференц-зал</a>
+                    </div>
+                </div>
+                <div class="secondary-menu">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="link-container">
+                                <a href="#"> Тарифы</a>
+                            </div>
+                            <div class="link-container">
+                                <a href="#"> Галерея</a>
+                            </div>
+                            <div class="link-container">
+                                <a href="#"> Мероприятия</a>
+                            </div>
+                            <div class="link-container">
+                                <a href="#"> Блог</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="link-container">
+                                <a href="#">О компании</a>
+                            </div>
+                            <div class="link-container">
+                                <a href="#">Партнерам</a>
+                            </div>
+                            <div class="link-container">
+                                <a href="#">Контакты</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-container">
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div class="link-container">
+                        <a href="#">Договор оферты</a>
+                    </div>
+                    <div class="link-container">
+                        <a href="#">Правила работы или что тут еще будет?</a>
+                    </div>
+                    <div class="link-container">
+                        <a href="#">Собственникам недвижимости</a>
+                    </div>
+                </div>
+
+                <div class="btn-container">
+                    <button class="button btn-grn">Войти</button>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <section class="promo-slider">
-    <div class="owl-theme owl-carousel">
-
-        <div class="item"><img src="./assets/img/slider1.png" alt="">
-            <div class="text">
-                <h3>Рабочее место</h3>
-                <p>в коворкинге рядом с метро</p>
-            </div>
-        </div>
-        <div class="item"><img src="./assets/img/slider2.png" alt="">
-            <div class="text">
-                <h3>от <span class="big">2</span> до <span class="big">24</span> чел.</h3>
-                <p>офисы для работы в команде или соло</p>
-            </div>
+    <div class="item">
+        <img src="./assets/img/slider1.png" alt="">
+        <div class="text">
+            <h3>Рабочее место</h3>
+            <p>в коворкинге рядом с метро</p>
         </div>
     </div>
     <div class="promo-slider-nav">
-        <button class="btn-left"><img src="./assets/svg/slider-arrow-left.svg" alt=""></button>
-        <button class="btn-right"><img src="./assets/svg/slider-arrow-right.svg" alt=""></button>
+        <button class="btn-left" data-toggle="modal" data-target="#sliderModal"><img
+                src="./assets/svg/slider-arrow-left.svg" alt=""></button>
+        <button class="btn-right" data-toggle="modal" data-target="#sliderModal"><img
+                src="./assets/svg/slider-arrow-right.svg" alt=""></button>
     </div>
 </section>
+<section class="promo-mobile-slider">
+    <div class="item">
+        <img src="./assets/img/mobile-slider1.png" alt="">
+        <div class="text">
+            <h3>Рабочее место</h3>
+            <p>в коворкинге рядом с метро</p>
+        </div>
+    </div>
+    <div class="promo-slider-nav">
+        <button class="btn-left" data-toggle="modal" data-target="#sliderModal"><img
+                src="./assets/svg/slider-arrow-left.svg" alt=""></button>
+        <button class="btn-right" data-toggle="modal" data-target="#sliderModal"><img
+                src="./assets/svg/slider-arrow-right.svg" alt=""></button>
+    </div>
+</section>
+<div class="modal fade" id="sliderModal" tabindex="-1" role="dialog">
+    <button class="mobile-close-modal" data-dismiss="modal" aria-label="Close">
+        <svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Галлерея-лайтбокс-(по-клику-на-заглавные-картинки-лендингов)"
+                   transform="translate(-285.000000, -19.000000)" fill="#3DD89D">
+                    <g id="Group-Copy" transform="translate(284.000000, 19.000000)">
+                        <rect id="Rectangle-7-Copy"
+                              transform="translate(10.500000, 10.000000) rotate(45.000000) translate(-10.500000, -10.000000) "
+                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                        <rect id="Rectangle-7-Copy"
+                              transform="translate(10.500000, 10.000000) rotate(-45.000000) translate(-10.500000, -10.000000) "
+                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </button>
+    <div class="modal-dialog modal-slider" role="document">
+
+        <div class="modal-content">
+            <button class="close-modal" data-dismiss="modal" aria-label="Close">
+                <svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Галлерея-лайтбокс-(по-клику-на-заглавные-картинки-лендингов)"
+                           transform="translate(-1100.000000, -99.000000)" fill="#3DD89D">
+                            <path d="M1114.13251,113.132511 L1114.13251,93.9748737 L1116.57817,93.9748737 L1116.57817,113.132511 L1135.7358,113.132511 L1135.7358,115.578167 L1116.57817,115.578167 L1116.57817,134.735804 L1114.13251,134.735804 L1114.13251,115.578167 L1094.97487,115.578167 L1094.97487,113.132511 L1114.13251,113.132511 Z"
+                                  id="Combined-Shape"
+                                  transform="translate(1115.355339, 114.355339) rotate(45.000000) translate(-1115.355339, -114.355339) "></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+            <div class=" owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./assets/img/modal-slider.png" alt="">
+                    <div class="text">
+                        <p> Всё для вашей продуктивности. Лучше работается, <br> когда стены в офисе зелёные, а столы
+                            стоят
+                            полукругом?</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/slider2.png" alt="">
+                    <div class="text">
+                        <p> Всё для вашей продуктивности. Лучше работается, <br> когда стены в офисе зелёные, а столы
+                            стоят
+                            полукругом?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="btn-left"><img
+                        src="./assets/svg/slider-arrow-left.svg" alt=""></button>
+                <button class="btn-right"><img
+                        src="./assets/svg/slider-arrow-right.svg" alt=""></button>
+            </div>
+        </div>
+
+    </div>
+</div>
 <section class="content-section">
     <div class="container">
         <div class="row">
-            <div class="col-7 coworking-text-block">
+            <div class="col-12 col-lg-7 coworking-text-block">
                 <p class="text-big">Openspace в коворкинге GrowUp — <br class="d-none d-lg-block">
                     это всё необходимое для работы
                 </p>
@@ -90,14 +257,41 @@
                         тарифы</a>)</p>
                     <p class="text-normal">До 20 сентября <span class="text-red">скидка 30%</span></p>
                 </div>
-                <h3 class="h3 opportunities-header">Что ещё входит в тариф?</h3>
+                <h3 class="h3 opportunities-header">Что ещё входит <br class="d-lg-none"> в тариф?</h3>
 
 
                 <div class="opportunities-block">
                     <div class="opportunity-item">
                         <div class="name-block">
                             <p>Переговорные</p>
+                            <a data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false"
+                               aria-controls="collapseExample">
+
+                                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Коворкинг-320x480-Full" transform="translate(-282.000000, -1015.000000)">
+                                            <g id="Group" transform="translate(283.000000, 1016.000000)">
+                                                <path d="M9.99763741,9.9988187 L9.99763741,4 L11,4 L11,9.9988187 L17,9.9988187 L17,10.9988187 L11,10.9988187 L11,17 L9.99763741,17 L9.99763741,10.9988187 L4,10.9988187 L4,9.9988187 L9.99763741,9.9988187 Z"
+                                                      id="Combined-Shape" fill="#3DD89D"></path>
+                                                <circle id="Oval" stroke="#3DD89D" cx="10.5" cy="10.5"
+                                                        r="10.5"></circle>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
                             <button class="button btn-grn-outline">Забронировать</button>
+                        </div>
+                        <div class="collapse" id="collapse1">
+                            <div class="mobile-text-block">
+                                <p> Проводите совещание? Организуете переговоры? Собеседуете кандидатов?</p>
+                                <p> Предоставим флипчарты и канцелярку, мультимедиа и кейтеринг, а приветливый ресепшн
+                                    встретит ваших гостей.</p>
+                                <p> Есть переговорки на 4, 6, 12 человек.</p>
+                                <button class="button btn-grn-outline">Забронировать</button>
+
+                            </div>
                         </div>
                         <div class="text-block">
                             <p> Проводите совещание? Организуете переговоры? Собеседуете кандидатов?</p>
@@ -110,7 +304,34 @@
                         <div class="name-block">
                             <p> Конференц-зал
                             </p>
+                            <a data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
+                               aria-controls="collapseExample">
+
+                                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Коворкинг-320x480-Full" transform="translate(-282.000000, -1015.000000)">
+                                            <g id="Group" transform="translate(283.000000, 1016.000000)">
+                                                <path d="M9.99763741,9.9988187 L9.99763741,4 L11,4 L11,9.9988187 L17,9.9988187 L17,10.9988187 L11,10.9988187 L11,17 L9.99763741,17 L9.99763741,10.9988187 L4,10.9988187 L4,9.9988187 L9.99763741,9.9988187 Z"
+                                                      id="Combined-Shape" fill="#3DD89D"></path>
+                                                <circle id="Oval" stroke="#3DD89D" cx="10.5" cy="10.5"
+                                                        r="10.5"></circle>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
                             <button class="button btn-grn-outline">Забронировать</button>
+                        </div>
+                        <div class="collapse" id="collapse2">
+                            <div class="mobile-text-block">
+                                <p> Ваши мероприятия в надёжных руках команды GrowUp. Микрофоны не вырубятся,
+                                    презентации не
+                                    зависнут, гости
+                                    не потеряются, кофе будет горячим.</p>
+                                <button class="button btn-grn-outline">Забронировать</button>
+
+                            </div>
                         </div>
                         <div class="text-block">
                             <p> Ваши мероприятия в надёжных руках команды GrowUp. Микрофоны не вырубятся, презентации не
@@ -122,6 +343,30 @@
                         <div class="name-block">
                             <p> Техника
                             </p>
+                            <a data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
+                               aria-controls="collapseExample">
+
+                                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Коворкинг-320x480-Full" transform="translate(-282.000000, -1015.000000)">
+                                            <g id="Group" transform="translate(283.000000, 1016.000000)">
+                                                <path d="M9.99763741,9.9988187 L9.99763741,4 L11,4 L11,9.9988187 L17,9.9988187 L17,10.9988187 L11,10.9988187 L11,17 L9.99763741,17 L9.99763741,10.9988187 L4,10.9988187 L4,9.9988187 L9.99763741,9.9988187 Z"
+                                                      id="Combined-Shape" fill="#3DD89D"></path>
+                                                <circle id="Oval" stroke="#3DD89D" cx="10.5" cy="10.5"
+                                                        r="10.5"></circle>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapse3">
+                            <div class="mobile-text-block">
+                                <p> МФУ (черно-белый и цветной принтер, сканер)
+                                    Проектор, настенный экран, плазмы в переговорных
+                                    Аудиосистема, кликеры, микрофоны</p>
+                            </div>
                         </div>
                         <div class="text-block">
                             <p> МФУ (черно-белый и цветной принтер, сканер)
@@ -131,8 +376,34 @@
                     </div>
                     <div class="opportunity-item">
                         <div class="name-block">
-                            <p> Кухня <br> и кофе-поинты
+                            <p> Кухня <br class="d-none d-lg-block"> и кофе-поинты
                             </p>
+                            <a data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
+                               aria-controls="collapseExample">
+
+                                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Коворкинг-320x480-Full" transform="translate(-282.000000, -1015.000000)">
+                                            <g id="Group" transform="translate(283.000000, 1016.000000)">
+                                                <path d="M9.99763741,9.9988187 L9.99763741,4 L11,4 L11,9.9988187 L17,9.9988187 L17,10.9988187 L11,10.9988187 L11,17 L9.99763741,17 L9.99763741,10.9988187 L4,10.9988187 L4,9.9988187 L9.99763741,9.9988187 Z"
+                                                      id="Combined-Shape" fill="#3DD89D"></path>
+                                                <circle id="Oval" stroke="#3DD89D" cx="10.5" cy="10.5"
+                                                        r="10.5"></circle>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapse4">
+                            <div class="mobile-text-block">
+                                <p>В вашем распоряжении микроволновка, холодильник, чайник, посуда и кофемашина. А ещё
+                                    печеньки для
+                                    сладкоежек и фрукты для ЗОЖников. Администраторы каждое утро пополняют коворкинг
+                                    вкусняшками, проверяют
+                                    ароматность кофе и крепость чая. </p>
+                            </div>
                         </div>
                         <div class="text-block">
                             <p>В вашем распоряжении микроволновка, холодильник, чайник, посуда и кофемашина. А ещё
@@ -144,8 +415,35 @@
                     </div>
                     <div class="opportunity-item">
                         <div class="name-block">
-                            <p> Отдельная зона <br> для отдыха и восстановления
+                            <p> Отдельная зона <br class="d-none d-lg-block"> для отдыха <br class="d-lg-none"> и
+                                восстановления
                             </p>
+                            <a data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
+                               aria-controls="collapseExample">
+
+                                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Коворкинг-320x480-Full" transform="translate(-282.000000, -1015.000000)">
+                                            <g id="Group" transform="translate(283.000000, 1016.000000)">
+                                                <path d="M9.99763741,9.9988187 L9.99763741,4 L11,4 L11,9.9988187 L17,9.9988187 L17,10.9988187 L11,10.9988187 L11,17 L9.99763741,17 L9.99763741,10.9988187 L4,10.9988187 L4,9.9988187 L9.99763741,9.9988187 Z"
+                                                      id="Combined-Shape" fill="#3DD89D"></path>
+                                                <circle id="Oval" stroke="#3DD89D" cx="10.5" cy="10.5"
+                                                        r="10.5"></circle>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapse5">
+                            <div class="mobile-text-block">
+                                <p>Кстати, 15-минутный перерыв даёт + 23% к эффективности и производительности и - 19% к
+                                    стрессу. Мы
+                                    предусмотрели и это. Есть игровая и комната отдыха и летняя веранда (для лендинга
+                                    Мск и
+                                    Казани). </p>
+                            </div>
                         </div>
                         <div class="text-block">
                             <p>Кстати, 15-минутный перерыв даёт + 23% к эффективности и производительности и - 19% к
@@ -156,8 +454,37 @@
                     </div>
                     <div class="opportunity-item">
                         <div class="name-block">
-                            <p> Шкафчик <br> для личных вещей
+                            <p> Шкафчик <br class="d-none d-lg-block"> для личных вещей
                             </p>
+                            <a data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false"
+                               aria-controls="collapseExample">
+
+                                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Коворкинг-320x480-Full" transform="translate(-282.000000, -1015.000000)">
+                                            <g id="Group" transform="translate(283.000000, 1016.000000)">
+                                                <path d="M9.99763741,9.9988187 L9.99763741,4 L11,4 L11,9.9988187 L17,9.9988187 L17,10.9988187 L11,10.9988187 L11,17 L9.99763741,17 L9.99763741,10.9988187 L4,10.9988187 L4,9.9988187 L9.99763741,9.9988187 Z"
+                                                      id="Combined-Shape" fill="#3DD89D"></path>
+                                                <circle id="Oval" stroke="#3DD89D" cx="10.5" cy="10.5"
+                                                        r="10.5"></circle>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapse6">
+                            <div class="mobile-text-block">
+                                <p> Проверено на себе: ноутбук, папка документов, личная кружка и блокнот легко
+                                    поместятся в
+                                    локер.
+                                </p>
+                                <p> Размеры шкафа: 32см*37см*45см, запирается на электронный замок. Локер уже входит в
+                                    тариф
+                                    Fix, на других
+                                    тарифах вы можете арендовать шкаф за 200 рублей в месяц. </p>
+                            </div>
                         </div>
                         <div class="text-block">
                             <p> Проверено на себе: ноутбук, папка документов, личная кружка и блокнот легко поместятся в
@@ -170,8 +497,33 @@
                     </div>
                     <div class="opportunity-item">
                         <div class="name-block">
-                            <p> Высокоскоростной интернет и безлимитный Wi-Fi
+                            <p> Высокоскоростной интернет <br class="d-lg-none"> и безлимитный Wi-Fi
                             </p>
+                            <a data-toggle="collapse" href="#collapse7" role="button" aria-expanded="false"
+                               aria-controls="collapseExample">
+
+                                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Коворкинг-320x480-Full" transform="translate(-282.000000, -1015.000000)">
+                                            <g id="Group" transform="translate(283.000000, 1016.000000)">
+                                                <path d="M9.99763741,9.9988187 L9.99763741,4 L11,4 L11,9.9988187 L17,9.9988187 L17,10.9988187 L11,10.9988187 L11,17 L9.99763741,17 L9.99763741,10.9988187 L4,10.9988187 L4,9.9988187 L9.99763741,9.9988187 Z"
+                                                      id="Combined-Shape" fill="#3DD89D"></path>
+                                                <circle id="Oval" stroke="#3DD89D" cx="10.5" cy="10.5"
+                                                        r="10.5"></circle>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapse7">
+                            <div class="mobile-text-block">
+                                <p> Скорость интернета не подведет и будет стабильной в любое время суток. Только
+                                    давайте
+                                    без майнинг ферм?
+                                    ;)</p>
+                            </div>
                         </div>
                         <div class="text-block">
                             <p> Скорость интернета не подведет и будет стабильной в любое время суток. Только давайте
@@ -183,6 +535,35 @@
                         <div class="name-block">
                             <p> Доступ 24/7
                             </p>
+                            <a data-toggle="collapse" href="#collapse8" role="button" aria-expanded="false"
+                               aria-controls="collapseExample">
+
+                                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Коворкинг-320x480-Full" transform="translate(-282.000000, -1015.000000)">
+                                            <g id="Group" transform="translate(283.000000, 1016.000000)">
+                                                <path d="M9.99763741,9.9988187 L9.99763741,4 L11,4 L11,9.9988187 L17,9.9988187 L17,10.9988187 L11,10.9988187 L11,17 L9.99763741,17 L9.99763741,10.9988187 L4,10.9988187 L4,9.9988187 L9.99763741,9.9988187 Z"
+                                                      id="Combined-Shape" fill="#3DD89D"></path>
+                                                <circle id="Oval" stroke="#3DD89D" cx="10.5" cy="10.5"
+                                                        r="10.5"></circle>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="collapse" id="collapse8">
+                            <div class="mobile-text-block">
+                                <p> Коворкинг работает в режиме 24/7, доступ — по карточке резидента.
+                                </p>
+                                <p> Выбирайте сами самое продуктивное время для работы. Резидентам больше не страшны
+                                    городские пробки или
+                                    часы пик в метро.</p>
+                                <p> Администраторы коворкинга работают с 8:00 до 23:00 часов и готовы ответить на любые
+                                    вопросы.
+                                </p>
+                            </div>
                         </div>
                         <div class="text-block">
                             <p> Коворкинг работает в режиме 24/7, доступ — по карточке резидента.
@@ -226,7 +607,7 @@
                 </div>
 
             </div>
-            <div class="col-5">
+            <div class="d-none d-lg-block col-lg-5">
                 <div class="call-back-form sticky-top">
                     <h4 class="call-back-form__title">Хочу на экскурсию <br class="d-none d-lg-block">
                         или перезвоните мне!</h4>
@@ -237,7 +618,7 @@
                     <div class="input-form">
                         <input type="text" placeholder="Email">
                     </div>
-                    <div class="input-form">
+                    <div class="input-form mb-16">
                         <input type="text" placeholder="Номер телефона">
                     </div>
                     <button class="button btn-grn btn-block">Отправить заявку</button>
@@ -259,17 +640,18 @@
                     <a href="#" class="logo">
                         <img src="./assets/svg/growup-logo-b.svg" alt="">
                     </a>
-
-                    <select name="city" id="cityBottom" class="select2">
-                        <option value="1">Москва</option>
-                        <option value="2">Санкт-Петербург</option>
-                    </select>
-                    <span class="text-small">ул. космонавта Волкова, 6а</span>
+                    <div class="select-container">
+                        <select name="city" id="cityBottom" class="select2">
+                            <option value="1">Москва</option>
+                            <option value="2">Санкт-Петербург</option>
+                        </select>
+                    </div>
+                    <span class="text-small d-none d-lg-inline-block">ул. космонавта Волкова, 6а</span>
                 </div>
-                <div class="ml-lg-auto col-auto">
+                <div class="ml-auto col-auto">
                     <div class="social-link-block">
                         <a href="#" class="social-link-block__item">
-                            <svg width="18px" height="11px" viewBox="0 0 18 11" version="1.1"
+                            <svg width="18px" class="d-none d-lg-block" height="11px" viewBox="0 0 18 11" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="Footer" transform="translate(-1010.000000, -30.000000)">
@@ -280,10 +662,25 @@
                                     </g>
                                 </g>
                             </svg>
+
+                            <svg width="16px" class="d-lg-none" height="10px" viewBox="0 0 16 10" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Коворкинг-320x480-Full" transform="translate(-179.000000, -2076.000000)"
+                                       fill="#3DD89D">
+                                        <g id="Group-2" transform="translate(176.000000, 2069.000000)">
+                                            <g id="Group-4">
+                                                <path d="M10.9769266,16.9255651 L11.8994039,16.9255651 C11.8994039,16.9255651 12.1779336,16.8937651 12.3200405,16.7330918 C12.450779,16.5866447 12.4475308,16.3096506 12.4475308,16.3096506 C12.4475308,16.3096506 12.4288539,15.0150587 13.0029661,14.8242591 C13.5689578,14.6376437 14.2965456,16.0753353 15.0663594,16.6293236 C15.649404,17.0477437 16.0927777,16.9556913 16.0927777,16.9556913 L18.1529229,16.9255651 C18.1529229,16.9255651 19.2304998,16.8552705 18.7197267,15.9698935 C18.6775006,15.8970884 18.4217081,15.3138107 17.1874075,14.1171291 C15.8954521,12.8618686 16.0692286,13.064384 17.625097,10.895294 C18.5727475,9.57476001 18.9511581,8.76804598 18.8334123,8.42243094 C18.7205387,8.09355271 18.0229965,8.1805841 18.0229965,8.1805841 L15.7029986,8.19481038 C15.7029986,8.19481038 15.5308462,8.17054202 15.4033559,8.25087868 C15.2791138,8.32870483 15.1987219,8.51029917 15.1987219,8.51029917 C15.1987219,8.51029917 14.8316798,9.532918 14.3428318,10.4023951 C13.3091051,12.2375858 12.8957768,12.3346593 12.7268725,12.2200121 C12.3346573,11.9547338 12.432102,11.1538776 12.432102,10.5848262 C12.432102,8.80654063 12.6903307,8.06510014 11.9302614,7.87430056 C11.677717,7.80986385 11.4925719,7.76802184 10.8478123,7.76049028 C10.0195316,7.75212187 9.31955324,7.76383764 8.92246575,7.96718983 C8.65855279,8.10275795 8.45554283,8.40318361 8.57897288,8.42075726 C8.73244842,8.44167827 9.07918944,8.51783073 9.26433453,8.78059858 C9.50145017,9.11868206 9.49332977,9.87853303 9.49332977,9.87853303 C9.49332977,9.87853303 9.62975247,11.9714706 9.17338607,12.2308911 C8.86156276,12.4099749 8.43199367,12.0459494 7.51114046,10.3806372 C7.0393453,9.52789696 6.68367184,8.5856148 6.68367184,8.5856148 C6.68367184,8.5856148 6.61464846,8.40987834 6.49203044,8.31531539 C6.34342714,8.20150511 6.13554494,8.16552097 6.13554494,8.16552097 L3.93085671,8.1805841 C3.93085671,8.1805841 3.60035648,8.19062618 3.47936254,8.34042059 C3.3705492,8.47431504 3.4704301,8.75130917 3.4704301,8.75130917 C3.4704301,8.75130917 5.19601481,12.9740052 7.14978273,15.1020901 C8.9419547,17.0536016 10.9769266,16.9255651 10.9769266,16.9255651"
+                                                      id="Fill-6"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
                         </a>
                         <a href="#" class="social-link-block__item">
 
-                            <svg width="9px" height="18px" viewBox="0 0 9 18" version="1.1"
+                            <svg width="9px" height="18px" class="d-none d-lg-block" viewBox="0 0 9 18" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="Footer" transform="translate(-1055.000000, -26.000000)">
@@ -294,10 +691,25 @@
                                     </g>
                                 </g>
                             </svg>
+
+                            <svg width="9px" height="16px" class="d-lg-none" viewBox="0 0 9 16" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Коворкинг-320x480-Full" transform="translate(-217.000000, -2073.000000)"
+                                       fill="#3DD89D">
+                                        <g id="Group-2" transform="translate(176.000000, 2069.000000)">
+                                            <g id="Group-6" transform="translate(34.000000, 0.000000)">
+                                                <path d="M7.71428571,9.37975758 L9.36685714,9.37975758 L9.36685714,7.83924358 C9.36685714,7.16057817 9.38485714,6.11231851 9.89914286,5.46351115 C10.4417143,4.77677599 11.1857143,4.31034483 12.4654286,4.31034483 C14.5508571,4.31034483 15.4285714,4.59520677 15.4285714,4.59520677 L15.0154286,6.9426951 C15.0154286,6.9426951 14.3271429,6.75224916 13.6834286,6.75224916 C13.0405714,6.75224916 12.4654286,6.9741671 12.4654286,7.58908154 L12.4654286,9.37975758 L15.1011429,9.37975758 L14.9168571,11.6739856 L12.4654286,11.6739856 L12.4654286,19.6428571 L9.36685714,19.6428571 L9.36685714,11.6739856 L7.71428571,11.6739856 L7.71428571,9.37975758 Z"
+                                                      id="Fill-1"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
                         </a>
                         <a href="#" class="social-link-block__item">
 
-                            <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1"
+                            <svg width="17px" height="17px" class="d-none d-lg-block" viewBox="0 0 17 17" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="Footer" transform="translate(-1092.000000, -27.000000)">
@@ -310,16 +722,48 @@
                                     </g>
                                 </g>
                             </svg>
+
+                            <svg width="15px" height="15px" class="d-lg-none" viewBox="0 0 15 15" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Коворкинг-320x480-Full" transform="translate(-250.000000, -2074.000000)"
+                                       fill="#3DD89D">
+                                        <g id="Group-2" transform="translate(176.000000, 2069.000000)">
+                                            <g id="Group-8" transform="translate(69.000000, 0.000000)">
+                                                <g id="Group-5" transform="translate(5.172414, 5.172414)">
+                                                    <path d="M11.2384236,2.53674056 C10.7534072,2.53674056 10.3591133,2.93033662 10.3591133,3.41674877 C10.3591133,3.90176519 10.7534072,4.29605911 11.2384236,4.29605911 C11.7241379,4.29605911 12.1184319,3.90176519 12.1184319,3.41674877 C12.1184319,2.93033662 11.7241379,2.53674056 11.2384236,2.53674056 M7.32758621,9.77011494 C5.97861248,9.77011494 4.88505747,8.67655993 4.88505747,7.32758621 C4.88505747,5.97931034 5.97861248,4.88505747 7.32758621,4.88505747 C8.67586207,4.88505747 9.77011494,5.97931034 9.77011494,7.32758621 C9.77011494,8.67655993 8.67586207,9.77011494 7.32758621,9.77011494 M7.32758621,3.56539409 C5.24934319,3.56539409 3.56469622,5.25004105 3.56469622,7.32758621 C3.56469622,9.40582923 5.24934319,11.0904762 7.32758621,11.0904762 C9.40513136,11.0904762 11.0897783,9.40582923 11.0897783,7.32758621 C11.0897783,5.25004105 9.40513136,3.56539409 7.32758621,3.56539409 M13.2915435,10.2886289 C13.2594417,11.003243 13.1401067,11.3912562 13.0396141,11.6494663 C12.9070197,11.9914204 12.7479064,12.2349754 12.4917898,12.4917898 C12.2349754,12.7486043 11.9907225,12.9063218 11.6487685,13.040312 C11.3905583,13.1401067 11.0025452,13.2594417 10.2886289,13.2922414 C9.51539409,13.3278325 9.28370279,13.3348112 7.32758621,13.3348112 C5.37077176,13.3348112 5.13908046,13.3278325 4.36584565,13.2922414 C3.65192939,13.2594417 3.26391626,13.1401067 3.00570608,13.040312 C2.66375205,12.9063218 2.41949918,12.7486043 2.16268473,12.4917898 C1.90656814,12.2349754 1.74745484,11.9914204 1.61486043,11.6494663 C1.51436782,11.3912562 1.39573071,11.003243 1.36293103,10.2886289 C1.3273399,9.51609195 1.31966338,9.28440066 1.31966338,7.32758621 C1.31966338,5.37146962 1.3273399,5.13908046 1.36293103,4.36724138 C1.39573071,3.65262726 1.51436782,3.26461412 1.61486043,3.00640394 C1.74745484,2.66444992 1.90656814,2.42019704 2.16268473,2.16408046 C2.41949918,1.90726601 2.66375205,1.74885057 3.00570608,1.61625616 C3.26391626,1.51506568 3.65192939,1.39573071 4.36584565,1.36293103 C5.13908046,1.32803777 5.37077176,1.32036125 7.32758621,1.32036125 C9.28370279,1.32036125 9.51539409,1.32803777 10.2886289,1.36293103 C11.0025452,1.39573071 11.3905583,1.51506568 11.6487685,1.61625616 C11.9907225,1.74885057 12.2349754,1.90726601 12.4917898,2.16408046 C12.7479064,2.42019704 12.9070197,2.66444992 13.0396141,3.00640394 C13.1401067,3.26461412 13.2594417,3.65262726 13.2915435,4.36724138 C13.3271346,5.13908046 13.3348112,5.37146962 13.3348112,7.32758621 C13.3348112,9.28440066 13.3271346,9.51609195 13.2915435,10.2886289 M14.610509,4.30652709 C14.5749179,3.52701149 14.4513957,2.99384236 14.2706486,2.52766831 C14.0829228,2.04614122 13.8323892,1.63788998 13.4248358,1.23033662 C13.0179803,0.822783251 12.6090312,0.572249589 12.1268062,0.385221675 C11.6606322,0.203776683 11.1288588,0.0795566502 10.3486453,0.0446633826 C9.56633826,0.00907224959 9.31720033,0 7.32758621,0 C5.33727422,0 5.08813629,0.00907224959 4.30582923,0.0446633826 C3.52561576,0.0795566502 2.99384236,0.203776683 2.52766831,0.385221675 C2.04544335,0.572249589 1.63649425,0.822783251 1.22963875,1.23033662 C0.822085386,1.63788998 0.571551724,2.04614122 0.383825944,2.52766831 C0.203078818,2.99384236 0.0795566502,3.52701149 0.0439655172,4.30652709 C0.00767651888,5.08813629 0,5.33797209 0,7.32758621 C0,9.31789819 0.00767651888,9.56703612 0.0439655172,10.3486453 C0.0795566502,11.1288588 0.203078818,11.66133 0.383825944,12.1275041 C0.571551724,12.6097291 0.822085386,13.0179803 1.22963875,13.4255337 C1.63649425,13.833087 2.04544335,14.0836207 2.52766831,14.2699507 C2.99384236,14.4513957 3.52561576,14.5756158 4.30582923,14.6112069 C5.08813629,14.646798 5.33727422,14.6551724 7.32758621,14.6551724 C9.31720033,14.6551724 9.56633826,14.646798 10.3486453,14.6112069 C11.1288588,14.5756158 11.6606322,14.4513957 12.1268062,14.2699507 C12.6090312,14.0836207 13.0179803,13.833087 13.4248358,13.4255337 C13.8323892,13.0179803 14.0829228,12.6097291 14.2706486,12.1275041 C14.4513957,11.66133 14.5749179,11.1288588 14.610509,10.3486453 C14.646798,9.56703612 14.6551724,9.31789819 14.6551724,7.32758621 C14.6551724,5.33797209 14.646798,5.08813629 14.610509,4.30652709"
+                                                          id="Fill-3"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
                         </a>
                         <a href="#" class="social-link-block__item">
 
-                            <svg width="17px" height="11px" viewBox="0 0 17 11" version="1.1"
+                            <svg width="17px" height="11px" class="d-none d-lg-block" viewBox="0 0 17 11" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="Footer" transform="translate(-1133.000000, -30.000000)">
                                         <g id="Group-7" transform="translate(1127.000000, 21.000000)">
                                             <path d="M13,16 L13,12 L17,13.9603189 L13,16 Z M22.8308947,11.3736541 C22.8308947,11.3736541 22.6644737,10.295463 22.1544737,9.82089552 C21.5075789,9.19766837 20.7837368,9.19521794 20.4517895,9.15846142 C18.0726842,9 14.5035789,9 14.5035789,9 L14.4964211,9 C14.4964211,9 10.9282105,9 8.54910526,9.15846142 C8.21715789,9.19521794 7.49242105,9.19766837 6.84642105,9.82089552 C6.33552632,10.295463 6.17089474,11.3736541 6.17089474,11.3736541 C6.17089474,11.3736541 6,12.6380783 6,13.904136 L6,15.0909631 C6,16.3562041 6.17089474,17.6222618 6.17089474,17.6222618 C6.17089474,17.6222618 6.33552632,18.6996361 6.84642105,19.1742036 C7.49242105,19.7974308 8.34242105,19.7778273 8.72,19.8431722 C10.0808947,19.9624267 14.5,20 14.5,20 C14.5,20 18.0726842,19.9950991 20.4517895,19.8366377 C20.7837368,19.800698 21.5075789,19.7974308 22.1544737,19.1742036 C22.6644737,18.6996361 22.8308947,17.6222618 22.8308947,17.6222618 C22.8308947,17.6222618 23,16.3562041 23,15.0909631 L23,13.904136 C23,12.6380783 22.8308947,11.3736541 22.8308947,11.3736541 Z"
                                                   id="Fill-8"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+
+                            <svg width="15px" height="11px" class="d-lg-none" viewBox="0 0 15 11" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Коворкинг-320x480-Full" transform="translate(-285.000000, -2076.000000)"
+                                       fill="#3DD89D">
+                                        <g id="Group-2" transform="translate(176.000000, 2069.000000)">
+                                            <g id="Group-7" transform="translate(104.000000, 0.000000)">
+                                                <path d="M11.2068966,13.7931034 L11.2068966,10.3448276 L14.6551724,12.0347577 L11.2068966,13.7931034 Z M19.6818058,9.80487424 C19.6818058,9.80487424 19.5383394,8.87539912 19.0986842,8.46628924 C18.5410163,7.92902446 17.9170145,7.92691202 17.630853,7.89522537 C15.5799002,7.75862069 12.5030853,7.75862069 12.5030853,7.75862069 L12.4969147,7.75862069 C12.4969147,7.75862069 9.42087114,7.75862069 7.36991833,7.89522537 C7.08375681,7.92691202 6.45898367,7.92902446 5.90208711,8.46628924 C5.46166062,8.87539912 5.31973684,9.80487424 5.31973684,9.80487424 C5.31973684,9.80487424 5.17241379,10.8948951 5.17241379,11.9863242 L5.17241379,13.0094509 C5.17241379,14.1001759 5.31973684,15.191605 5.31973684,15.191605 C5.31973684,15.191605 5.46166062,16.120376 5.90208711,16.5294859 C6.45898367,17.0667507 7.19174229,17.0498511 7.51724138,17.1061829 C8.6904265,17.2089885 12.5,17.2413793 12.5,17.2413793 C12.5,17.2413793 15.5799002,17.2371544 17.630853,17.1005497 C17.9170145,17.0695672 18.5410163,17.0667507 19.0986842,16.5294859 C19.5383394,16.120376 19.6818058,15.191605 19.6818058,15.191605 C19.6818058,15.191605 19.8275862,14.1001759 19.8275862,13.0094509 L19.8275862,11.9863242 C19.8275862,10.8948951 19.6818058,9.80487424 19.6818058,9.80487424 Z"
+                                                      id="Fill-8"></path>
+                                            </g>
                                         </g>
                                     </g>
                                 </g>
@@ -332,7 +776,7 @@
     </section>
     <div class="container footer-container">
         <div class="row footer-main-row">
-            <div class="col-2">
+            <div class="col-2 d-none d-lg-block">
                 <div class="footer-link-container">
                     <a href="#" class="footer-link">Коворкинг</a>
                 </div>
@@ -346,7 +790,7 @@
                     <a href="#" class="footer-link">Конференц-зал</a>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 d-none d-lg-block">
                 <div class="footer-link-container">
                     <a href="#" class="footer-link">Тарифы</a>
                 </div>
@@ -360,7 +804,7 @@
                     <a href="#" class="footer-link">Блог</a>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-2 d-none d-lg-block">
                 <div class="footer-link-container">
                     <a href="#" class="footer-link">О компании</a>
                 </div>
@@ -371,9 +815,9 @@
                     <a href="#" class="footer-link">Контакты</a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3 contacts-container">
 
-
+                <span class="text-small d-lg-none">Москва, ул. космонавта Волкова, 6а</span>
                 <div class="footer-link-container">
                     <a href="tel:+7 (495) 500-87-06" class="footer-link-green">
                         <svg width="13px" height="13px" class="phone" viewBox="0 0 13 13" version="1.1"
@@ -384,7 +828,8 @@
                                           id="Shape"></path>
                                 </g>
                             </g>
-                        </svg>+7 (495) 500-87-06</a>
+                        </svg>
+                        +7 (495) 500-87-06</a>
                 </div>
                 <div class="footer-link-container">
                     <a href="mailto:msk@growup-coworking.ru" class="footer-link-green">
@@ -396,7 +841,8 @@
                                           id="Shape"></path>
                                 </g>
                             </g>
-                        </svg>msk@growup-coworking.ru</a>
+                        </svg>
+                        msk@growup-coworking.ru</a>
                 </div>
                 <div class="footer-tg-btn-container">
                     <a href="#" class="footer-tg-btn-container__link">
@@ -414,7 +860,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3 map-container">
                 <iframe class="footer-map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560.8160411654295!2d49.13829982923051!3d55.78865075281762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead0ce4a63d53%3A0xde323118116bcca1!2z0KHRgtGD0LTQuNGPINCw0YDRhdC40YLQtdC60YLRg9GA0Ysg0Lgg0LTQuNC30LDQudC90LAgWkFNQU4gQXJjaGl0ZWN0cw!5e0!3m2!1sru!2sru!4v1536768520467"
                         frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -431,6 +877,49 @@
         </div>
     </div>
 </footer>
+<section class="bottom-f-btn">
+    <button class="button btn-grn" data-toggle="collapse" data-target="#mobileApp">ХОЧУ НА ЭКСКУРСИЮ!</button>
+</section>
+<section class="mobile-application collapse" id="mobileApp">
+    <div class="call-back-form">
+        <button class="close-form" data-toggle="collapse" data-target="#mobileApp">
+            <svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Коворкинг-320x480-Заявка" transform="translate(-285.000000, -19.000000)" fill="#3DD89D">
+                        <g id="Group" transform="translate(284.000000, 19.000000)">
+                            <rect id="Rectangle-7-Copy"
+                                  transform="translate(10.500000, 10.000000) rotate(45.000000) translate(-10.500000, -10.000000) "
+                                  x="-2" y="9" width="25" height="2" rx="1"></rect>
+                            <rect id="Rectangle-7-Copy"
+                                  transform="translate(10.500000, 10.000000) rotate(-45.000000) translate(-10.500000, -10.000000) "
+                                  x="-2" y="9" width="25" height="2" rx="1"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </button>
+        <h4 class="call-back-form__title">Хочу на экскурсию <br class="d-none d-lg-block">
+            или перезвоните мне!</h4>
+        <div class="input-form">
+            <input type="text" placeholder="Ваше имя">
+            <span class="error-msg">Некорректно заполнено поле</span>
+        </div>
+        <div class="input-form">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="input-form">
+            <input type="text" placeholder="Номер телефона">
+        </div>
+        <button class="button btn-grn btn-block">Отправить заявку</button>
+        <div class="checkbox-form">
+            <input type="checkbox" id="agreementApp">
+            <label for="agreementApp">Я подтверждаю свое согласие на передачу и обработку персональных данных в
+                соответствии с соглашением</label>
+        </div>
+    </div>
+
+</section>
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
@@ -442,17 +931,23 @@
     });
 </script>
 <script>
-    var promoSlider = $('.promo-slider .owl-carousel');
-    promoSlider.owlCarousel({
+    var modalSlider = $('.modal-slider .owl-carousel');
+    modalSlider.owlCarousel({
         items: 1,
         dots: false,
-        loop: true
+        loop: true,
+        autoHeight: true
     });
-    $('.promo-slider-nav .btn-left').on('click', function () {
-        promoSlider.trigger('prev.owl.carousel')
+    $('.modal-slider .btn-left').on('click', function () {
+        modalSlider.trigger('prev.owl.carousel')
     })
-    $('.promo-slider-nav .btn-right').on('click', function () {
-        promoSlider.trigger('next.owl.carousel')
+    $('.modal-slider .btn-right').on('click', function () {
+        modalSlider.trigger('next.owl.carousel')
+    })
+</script>
+<script>
+    $('[data-target="#mobileApp"]').on('click', function () {
+        $('body').toggleClass('modal-open');
     })
 </script>
 </body>
