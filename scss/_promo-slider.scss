@@ -1,0 +1,159 @@
+.promo-slider {
+  position: relative;
+  @media (max-width: 991px) {
+    display: none;
+  }
+  .item {
+    position: relative;
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+    .text {
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      h3 {
+        font-size: 45px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 16px;
+        font-weight: 300;
+        width: 100%;
+        line-height: 64px;
+        .big {
+          font-size: 100px;
+          font-weight: 200;
+        }
+      }
+      p {
+        width: 100%;
+        font-size: 24px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        font-weight: 200;
+        text-align: center;
+      }
+    }
+  }
+  .promo-slider-nav {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: rgba(52, 45, 111, 0.18);
+      border-radius: 4px;
+      padding-left: 13px;
+      padding-right: 13px;
+      padding-top: 17px;
+      padding-bottom: 19px;
+      z-index: 5;
+      border: 0;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      &:hover {
+        background: rgba(52, 45, 111, 0.4);
+      }
+      &.btn-left {
+        left: 32px;
+      }
+      &.btn-right {
+        right: 32px;
+      }
+    }
+  }
+}
+
+.promo-mobile-slider {
+  position: relative;
+  @media (min-width: 992px) {
+    display: none;
+  }
+  .item {
+    position: relative;
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+    .text {
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      h3 {
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 0px;
+        font-weight: 300;
+        width: 100%;
+        line-height: 29px;
+        font-size: 21px;
+        letter-spacing: 0;
+        .big {
+          font-size: 100px;
+          font-weight: 200;
+        }
+      }
+      p {
+        width: 100%;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        font-weight: 200;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .promo-slider-nav {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    button {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: rgba(52, 45, 111, 0.18);
+      border-radius: 4px;
+      padding: 0 6px 9px;
+      z-index: 5;
+      border: 0;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      img{
+        max-width: 100%;
+      }
+      &:hover {
+        background: rgba(52, 45, 111, 0.4);
+      }
+      &.btn-left {
+        left: 0;
+      }
+      &.btn-right {
+        right: 0;
+      }
+    }
+  }
+}

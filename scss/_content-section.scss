@@ -1,0 +1,215 @@
+.content-section {
+  padding-top: 55px;
+  @media(max-width: 991px){
+    padding-top: 28px;
+  }
+}
+
+.coworking-text-block {
+  .text-big {
+    margin-bottom: 27px;
+    @media(max-width: 991px){
+      margin-bottom: 26px;
+    }
+  }
+  .img-w-text {
+    margin-bottom: 42px;
+    @media(max-width: 991px){
+      margin-bottom: 29px;
+    }
+  }
+  .info-container {
+    margin-bottom: 51px;
+    p {
+      margin-bottom: 1rem;
+    }
+    @media(max-width: 991px){
+      margin-bottom: 39px;
+    }
+  }
+  .text-normal {
+    margin-bottom: 46px;
+    @media(max-width: 991px){
+      margin-bottom: 22px;
+    }
+  }
+  .opportunities-header {
+    margin-bottom: 49px;
+    @media(max-width: 991px){
+      margin-bottom: 29px;
+    }
+  }
+  .more-block {
+    margin-bottom: 12px;
+  }
+  .more-header {
+    margin-bottom: 33px;
+    @media(max-width: 991px){
+      margin-bottom: 21px;
+    }
+  }
+
+}
+
+.more-block {
+  .more-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .more-text-item {
+      width: 302px;
+      margin-bottom: 45px;
+      @media (max-width: 991px) {
+        width: 100%;
+        margin-bottom: 17px;
+      }
+      &.wider {
+        width: 100%;
+      }
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.info-container {
+  padding-top: 32px;
+  padding-bottom: 35px;
+  border-top: 2px solid #BDBBD3;
+  border-bottom: 2px solid #BDBBD3;
+  @media (max-width: 991px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.img-w-text {
+  position: relative;
+  img {
+    position: relative;
+    width: 260px;
+    height: 180px;
+  }
+  .text-block {
+    position: absolute;
+    top: 36px;
+    bottom: 0;
+    width: 380px;
+    transform: translateX(190px);
+  }
+  @media(max-width: 991px) {
+    img {
+      width: 155px;
+      height: 107px;
+    }
+    .text-block {
+      top: 4px;
+      width: 185px;
+      transform: translateX(105px);
+    }
+  }
+}
+
+.opportunities-block {
+  width: 100%;
+  margin-bottom: 51px;
+  @media(max-width: 991px){
+    margin-bottom: 24px;
+  }
+  .opportunity-item {
+    width: 100%;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    -khtml-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 2px solid #EBEAF2;
+    padding-top: 32px;
+    padding-bottom: 29px;
+    @media(max-width: 991px){
+      padding-top: 17px;
+      padding-bottom: 0
+    }
+    &:nth-of-type(1) {
+      border-top: 0;
+      padding-top: 0;
+    }
+    .name-block {
+      width: 159px;
+      margin-right: 31px;
+      @media(max-width: 991px){
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 12px;
+        display: flex;
+        p{
+          max-width: 90%;
+          margin-right: auto;
+        }
+      }
+      a{
+        @media(min-width: 992px){
+          display: none;
+        }
+        svg{
+          transition: all .2s;
+        }
+        &[aria-expanded="true"]{
+          svg{
+            transform: rotate(45deg);
+          }
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        color: $purple;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-bottom: 16px;
+        @media(max-width: 991px){
+          margin-bottom: 0;
+        }
+      }
+      button {
+        margin-bottom: 3px;
+        @media(max-width: 991px){
+          display: none;
+        }
+      }
+    }
+    .mobile-text-block{
+      text-align: center;
+      p{
+        text-align: left;
+        font-size: 12px;
+        margin-bottom: 16px;
+      }
+      button{
+        margin-bottom: 25px;
+      }
+
+    }
+    .text-block {
+      @media(max-width:991px){
+        display: none;
+      }
+      width: 445px;
+      font-size: 14px;
+      font-weight: 300;
+      color: $black;
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+  }
+
+}

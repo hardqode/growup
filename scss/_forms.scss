@@ -1,0 +1,111 @@
+.input-form{
+  display: flex;
+  position: relative;
+  input{
+    flex: 1 1 auto;
+    height: 56px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+    background: white;
+    border: 1px solid #BDBBD3;
+    border-radius: 4px;
+    transition: all .2s;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 20px;
+    color: $purple;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    &::placeholder{
+      color: #8987AA;
+    }
+    &::-moz-placeholder{
+      color: #8987AA;
+    }
+    &::-webkit-input-placeholder{
+      color: #8987AA;
+    }
+    &::-ms-input-placeholder{
+      color: #8987AA;
+    }
+    &.error{
+      border-color: $red;
+      + .error-msg{
+        display: block;
+      }
+    }
+    &:focus{
+      border: 1px solid $purple;
+      outline:none;
+    }
+  }
+  .error-msg{
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+    color: $red ;
+  }
+}
+
+.checkbox-form{
+  input{
+    display: none;
+  }
+  input:checked{
+  +label{
+    &:after{
+      opacity: 1;
+    }
+  }
+}
+  label{
+    padding-left: 28px;
+    position: relative;
+    font-size: 10px;
+    color: #706E7A;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin-bottom: 0;
+    &:hover {
+      &:after{
+        opacity: .3;
+      }
+    }
+    &:before{
+      position: absolute;
+      content: '';
+      width: 13px;
+      height: 13px;
+      border: 1px solid #BDBBD3;
+      left: 0;
+      top: 4px;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+    &:after{
+      position: absolute;
+      content: '✔';
+      color: $green;
+      left: 3px;
+      top: 0;
+      opacity: 0;
+
+      font-size: 16px;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -ms-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+  }
+}
