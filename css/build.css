@@ -1151,8 +1151,7 @@ footer .footer-container {
     z-index: 5; }
     .modal-dialog.modal-slider .slider-nav button {
       position: absolute;
-      top: 0;
-      bottom: 0;
+      top: 280px;
       margin: auto;
       background: rgba(52, 45, 111, 0.8);
       border-radius: 4px;
