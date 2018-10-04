@@ -1175,9 +1175,13 @@ footer .footer-container {
       .modal-dialog.modal-slider .slider-nav button:hover {
         background: rgba(52, 45, 111, 0.9); }
       .modal-dialog.modal-slider .slider-nav button.btn-left {
-        left: 0; }
+        left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; }
       .modal-dialog.modal-slider .slider-nav button.btn-right {
-        right: 0; }
+        right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0; }
   .modal-dialog.modal-slider .item .text {
     width: 100%;
     position: absolute;

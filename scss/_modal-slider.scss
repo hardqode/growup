@@ -105,11 +105,15 @@
       &:hover{
         background: rgba(52,45,111,0.9);
       }
-      &.btn-left{
+      &.btn-left {
         left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius:0;
       }
-      &.btn-right{
+      &.btn-right {
         right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius:0;
       }
     }
   }
