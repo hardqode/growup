@@ -3,10 +3,10 @@ header {
   padding-top: 19px;
   padding-bottom: 19px;
   box-shadow: 0 3px 2px 0 rgba(74,74,74,0.25);
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2040;
   @media(max-width: 991px) {
     padding-top: 10px;
     padding-bottom: 11px;
