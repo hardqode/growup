@@ -613,14 +613,16 @@
                 <div class="call-back-form sticky-top">
                     <h4 class="call-back-form__title">Хочу на экскурсию! </h4>
                     <div class="input-form">
-                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" placeholder="Ваше имя" required>
                         <span class="error-msg">Некорректно заполнено поле</span>
                     </div>
                     <div class="input-form">
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" required data-inputmask="'alias': 'email'">
+                        <span class="error-msg">Некорректно заполнено поле</span>
                     </div>
                     <div class="input-form">
-                        <input type="text" placeholder="Номер телефона">
+                        <input type="text" placeholder="Номер телефона" required data-inputmask="'mask': '+7(999) 999-99-99'">
+                        <span class="error-msg">Некорректно заполнено поле</span>
                     </div>
                     <div class="slider-container">
                         <span class="slider-label">На сколько человек вам нужен офис?</span>
@@ -917,14 +919,16 @@
         </button>
         <h4 class="call-back-form__title">Хочу на экскурсию! </h4>
         <div class="input-form">
-            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваше имя" required>
             <span class="error-msg">Некорректно заполнено поле</span>
         </div>
         <div class="input-form">
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email" data-inputmask="'alias': 'email'" required>
+            <span class="error-msg">Некорректно заполнено поле</span>
         </div>
         <div class="input-form">
-            <input type="text" placeholder="Номер телефона">
+            <input type="text" placeholder="Номер телефона" data-inputmask="'mask': '+7(999) 999-99-99'">
+            <span class="error-msg">Некорректно заполнено поле</span>
         </div>
         <div class="slider-container">
             <span class="slider-label">На сколько человек вам нужен офис?</span>
@@ -950,6 +954,8 @@
 <script src="./js/owl.carousel.min.js"></script>
 <script src="./js/nouislider.min.js"></script>
 <script src="./js/wNumb.js"></script>
+<script src="./js/jquery.inputmask.bundle.min.js"></script>
+<script src="./js/inputmask-scripts.js"></script>
 <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script>
     $(function () {

@@ -608,14 +608,16 @@
                 <div class="call-back-form sticky-top">
                     <h4 class="call-back-form__title">Хочу на экскурсию! </h4>
                     <div class="input-form">
-                        <input type="text" placeholder="Ваше имя">
+                        <input type="text" placeholder="Ваше имя" required>
                         <span class="error-msg">Некорректно заполнено поле</span>
                     </div>
                     <div class="input-form">
-                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Email" data-inputmask="'alias': 'email'" required>
+                        <span class="error-msg">Некорректно заполнено поле</span>
                     </div>
                     <div class="input-form mb-16">
-                        <input type="text" placeholder="Номер телефона">
+                        <input type="text" placeholder="Номер телефона" data-inputmask="'mask': '+7(999) 999-99-99'" required>
+                        <span class="error-msg">Некорректно заполнено поле</span>
                     </div>
                     <button class="button btn-grn btn-block">Отправить заявку</button>
                     <div class="checkbox-form">
@@ -894,14 +896,16 @@
         </button>
         <h4 class="call-back-form__title">Хочу на экскурсию! </h4>
         <div class="input-form">
-            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваше имя" required>
             <span class="error-msg">Некорректно заполнено поле</span>
         </div>
         <div class="input-form">
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email" data-inputmask="'alias': 'email'" required>
+            <span class="error-msg">Некорректно заполнено поле</span>
         </div>
         <div class="input-form">
-            <input type="text" placeholder="Номер телефона">
+            <input type="text" placeholder="Номер телефона" data-inputmask="'mask': '+7(999) 999-99-99'" required>
+            <span class="error-msg">Некорректно заполнено поле</span>
         </div>
         <button class="button btn-grn btn-block">Отправить заявку</button>
         <div class="checkbox-form">
@@ -915,6 +919,8 @@
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
+<script src="./js/jquery.inputmask.bundle.min.js"></script>
+<script src="./js/inputmask-scripts.js"></script>
 <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script>
     $(function () {

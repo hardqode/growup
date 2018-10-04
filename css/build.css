@@ -915,10 +915,10 @@ footer .footer-container {
         position: absolute;
         right: 15px;
         top: 19px; } }
-  .call-back-form .input-form input {
+  .call-back-form .input-form {
     margin-bottom: 16px; }
-  .call-back-form .input-form.mb-16 {
-    margin-bottom: 16px; }
+    .call-back-form .input-form.mb-16 {
+      margin-bottom: 16px; }
   .call-back-form button {
     margin-bottom: 21px; }
   .call-back-form .checkbox-form {
@@ -942,7 +942,8 @@ footer .footer-container {
 
 .input-form {
   display: flex;
-  position: relative; }
+  position: relative;
+  flex-wrap: wrap; }
   .input-form input {
     flex: 1 1 auto;
     height: 56px;
@@ -980,11 +981,10 @@ footer .footer-container {
       outline: none; }
   .input-form .error-msg {
     display: none;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    width: 100%;
     font-size: 10px;
-    color: #D83D51; }
+    color: #D83D51;
+    text-align: right; }
 
 .checkbox-form input {
   display: none; }

@@ -1,6 +1,7 @@
 .input-form{
   display: flex;
   position: relative;
+  flex-wrap: wrap;
   input{
     flex: 1 1 auto;
     height: 56px;
@@ -46,11 +47,10 @@
   }
   .error-msg{
     display: none;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    width: 100%;
     font-size: 10px;
     color: $red ;
+    text-align: right;
   }
 }
 
