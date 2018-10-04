@@ -187,6 +187,7 @@ header {
     text-decoration: none; }
   @media (min-width: 992px) {
     header .logo-container img {
+      margin-top: -2px;
       margin-right: 19px; } }
   @media (max-width: 991px) {
     header .logo-container img {
