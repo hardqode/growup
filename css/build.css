@@ -244,7 +244,8 @@ header {
     color: #3B35A5;
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 4px; }
+    margin-bottom: 4px;
+    font-weight: 500; }
     @media (max-width: 991px) {
       header .phone-block .phone {
         font-size: 14px; } }
