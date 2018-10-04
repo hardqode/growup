@@ -897,7 +897,8 @@ footer .footer-container {
 .call-back-form {
   background: #F8F7FA;
   padding: 34px 48px 34px 40px;
-  top: 73px; }
+  top: 89px;
+  margin-bottom: 16px; }
   .call-back-form .close-form {
     display: none; }
   @media (max-width: 991px) {
