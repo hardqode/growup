@@ -52,12 +52,10 @@
                 <a href="index.html">
                     <img src="./assets/svg/growup-logo.svg" alt="">
                 </a>
-                <div class="select-container">
-                    <select name="city" id="city" class="select2">
-                        <option value="1">Москва</option>
-                        <option value="2">Санкт-Петербург</option>
-                    </select>
-                </div>
+                <a  role="button" data-placement="bottom" class="change-city" data-toggle="popover">
+                    <div class="change-city__title">Москва</div>
+                </a>
+
             </div>
             <div class="col-auto nav-links mx-auto">
                 <a href="index.html" class="link ">Open Space</a>
@@ -661,12 +659,10 @@
                     <a href="#" class="logo">
                         <img src="./assets/svg/growup-logo-b.svg" alt="">
                     </a>
-                    <div class="select-container">
-                        <select name="city" id="cityBottom" class="select2">
-                            <option value="1">Москва</option>
-                            <option value="2">Санкт-Петербург</option>
-                        </select>
-                    </div>
+                    <a  role="button" data-placement="bottom" class="change-city" data-toggle="popover">
+                        <div class="change-city__title">Москва</div>
+                    </a>
+
                     <span class="text-small d-none d-lg-inline-block">ул. космонавта Волкова, 6а</span>
                 </div>
                 <div class="ml-auto col-auto">
@@ -956,12 +952,17 @@
 <script src="./js/owl.carousel.min.js"></script>
 <script src="./js/nouislider.min.js"></script>
 <script src="./js/wNumb.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script>
-    $('.select2').select2({
-        width: 'auto',
-        minimumResultsForSearch: -1
-    });
+    $(function () {
+        $('[data-toggle="popover"]').popover({
+            html: true,
+            content:'<div class="change-city__popover">' +
+            '<a href="#">Санкт-Петербург</a>' +
+            '<a href="#">Казань</a>' +
+            '</div>'
+        })
+    })
 </script>
 <script>
     var modalSlider = $('.modal-slider .owl-carousel');
