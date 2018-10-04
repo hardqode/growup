@@ -1,32 +1,32 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Apple';
-  src: url("../assets/fonts/regular.otf");
+  src: url("../assets/fonts/regular.woff");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: 'Apple';
-  src: url("../assets/fonts/light.otf");
+  src: url("../assets/fonts/light.woff");
   font-weight: 200;
   font-style: normal; }
 @font-face {
   font-family: 'Apple';
-  src: url("../assets/fonts/bold.otf");
+  src: url("../assets/fonts/bold.woff");
   font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: 'Apple';
-  src: url("../assets/fonts/medium.otf");
+  src: url("../assets/fonts/medium.woff");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'Apple';
-  src: url("../assets/fonts/semibold.otf");
+  src: url("../assets/fonts/semibold.woff");
   font-weight: 500;
   font-style: normal; }
 @font-face {
   font-family: 'Apple';
-  src: url("../assets/fonts/thin.otf");
+  src: url("../assets/fonts/thin.woff");
   font-weight: 100;
   font-style: normal; }
 button:focus, button:active, a:focus, a:active {
@@ -34,7 +34,9 @@ button:focus, button:active, a:focus, a:active {
 
 body {
   font-family: 'Apple', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  position: relative;
+  padding-top: 73px; }
 
 @media (min-width: 991px) {
   .container {
@@ -157,7 +159,12 @@ body {
 header {
   background: white;
   padding-top: 19px;
-  padding-bottom: 19px; }
+  padding-bottom: 19px;
+  box-shadow: 0 3px 2px 0 rgba(74, 74, 74, 0.25);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
   @media (max-width: 991px) {
     header {
       padding-top: 10px;
