@@ -8,7 +8,7 @@
     padding-bottom: 18px;
     padding-left: 20px;
     background: white;
-    border: 1px solid #BDBBD3;
+    border: 1px solid #D1CEF4;
     border-radius: 4px;
     transition: all .2s;
     font-size: 14px;
@@ -22,16 +22,16 @@
     -o-transition: all .2s;
     transition: all .2s;
     &::placeholder{
-      color: #8987AA;
+      color: #6E69B2;
     }
     &::-moz-placeholder{
-      color: #8987AA;
+      color: #6E69B2;
     }
     &::-webkit-input-placeholder{
-      color: #8987AA;
+      color: #6E69B2;
     }
     &::-ms-input-placeholder{
-      color: #8987AA;
+      color: #6E69B2;
     }
     &.error{
       border-color: $red;
@@ -83,7 +83,7 @@
       content: '';
       width: 13px;
       height: 13px;
-      border: 1px solid #BDBBD3;
+      border: 1px solid #D1CEF4;
       left: 0;
       top: 4px;
       -webkit-transition: all .2s;
