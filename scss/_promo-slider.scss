@@ -5,9 +5,21 @@
   }
   .item {
     position: relative;
+    max-height: 480px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    .bg-block{
+
+    }
     img {
       max-width: 100%;
       width: 100%;
+    }
+    .dots{
+      position: absolute;
+      bottom: 45px;
     }
     .text {
       position: absolute;

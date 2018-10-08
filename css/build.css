@@ -403,10 +403,18 @@ header {
     .promo-slider {
       display: none; } }
   .promo-slider .item {
-    position: relative; }
+    position: relative;
+    max-height: 480px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center; }
     .promo-slider .item img {
       max-width: 100%;
       width: 100%; }
+    .promo-slider .item .dots {
+      position: absolute;
+      bottom: 45px; }
     .promo-slider .item .text {
       position: absolute;
       align-items: center;
