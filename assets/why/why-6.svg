@@ -1,0 +1,15 @@
+
+<svg width="46px" height="57px" viewBox="0 0 46 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Главная" transform="translate(-1052.000000, -1979.000000)" stroke-width="2">
+            <g id="Group-7" transform="translate(1053.000000, 1979.000000)">
+                <path d="M22,55.2452 L19.867,54.0502 C7.599,47.1802 0,34.2162 0,20.1542 L0,11.6612 C0,10.8732 0.466,10.1602 1.187,9.8432 L20.628,1.2882 C21.502,0.9032 22.498,0.9032 23.372,1.2882 L42.813,9.8432 C43.534,10.1602 44,10.8732 44,11.6612 L44,20.1542 C44,34.2162 36.401,47.1802 24.133,54.0502 L22,55.2452 Z" id="Stroke-1" stroke="#32D69B"></path>
+                <path d="M22.292,7.5431 L37.84,14.3841 L37.84,20.1551 C37.84,31.6351 31.797,42.2741 22,48.1671 C12.203,42.2741 6.16,31.6351 6.16,20.1551 L6.16,14.3841 L21.708,7.5431 C21.895,7.4611 22.105,7.4611 22.292,7.5431 Z" id="Stroke-3" stroke="#3DD89D"></path>
+                <polyline id="Stroke-5" stroke="#3B35A5" points="16.3427 24.8468 20.3747 31.5708 27.6567 18.7048"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

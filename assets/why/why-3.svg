@@ -1,0 +1,27 @@
+
+<svg width="62px" height="49px" viewBox="0 0 62 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Главная" transform="translate(-1043.000000, -1814.000000)" stroke-width="2">
+            <g id="Group-17" transform="translate(1044.000000, 1814.000000)">
+                <g id="Group-5" transform="translate(0.000000, 0.520800)" stroke="#32D69B">
+                    <polygon id="Stroke-1" points="41 47 60 47 60 0.479 41 0.479"></polygon>
+                    <path d="M41.2461,27.1287 L60.0341,27.1287" id="Stroke-3"></path>
+                    <polygon id="Stroke-4" points="0 47 41 47 41 27.14 0 27.14"></polygon>
+                </g>
+                <path d="M44.7832,19.2325 L44.7832,22.7705" id="Stroke-6" stroke="#32D69B"></path>
+                <path d="M44.7832,31.8458 L44.7832,35.3838" id="Stroke-7" stroke="#32D69B"></path>
+                <path d="M22.5527,31.6153 L19.0147,31.6153" id="Stroke-8" stroke="#32D69B"></path>
+                <polygon id="Stroke-9" stroke="#3B35A5" points="18.462 8.2638 22.121 8.2638 22.121 0.9998 18.462 0.9998"></polygon>
+                <polygon id="Stroke-11" stroke="#3B35A5" points="28.5634 11.8965 12.0194 11.8965 15.4614 8.2635 25.1214 8.2635"></polygon>
+                <g id="Group-15" transform="translate(0.000000, 27.520800)" stroke="#32D69B">
+                    <polygon id="Stroke-12" points="0 20 11 20 11 0.14 0 0.14"></polygon>
+                    <polygon id="Stroke-14" points="30 20 41 20 41 0.14 30 0.14"></polygon>
+                </g>
+                <polygon id="Stroke-16" stroke="#32D69B" points="11 35.6598 30 35.6598 30 27.6598 11 27.6598"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

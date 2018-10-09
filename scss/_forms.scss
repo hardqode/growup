@@ -52,6 +52,23 @@
     color: $red;
     text-align: right;
   }
+  &.w-icon{
+    position: relative;
+    input{
+      padding-right: 60px;
+    }
+    .icon{
+      cursor: pointer;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      display: inherit;
+      position: absolute;
+      top: 0;
+      bottom:0;
+      right: 20px;
+    }
+  }
 }
 
 .checkbox-form {
@@ -172,3 +189,16 @@
   }
 }
 
+.input-w-icon{
+  height: 56px;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #D1CEF4;
+  border-radius: 4px;
+  input{
+    background: transparent;
+    border: 0;
+
+  }
+}

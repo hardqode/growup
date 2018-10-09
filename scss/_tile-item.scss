@@ -1,0 +1,143 @@
+.tile-item {
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 25px;
+  transition: all .3s;
+  box-shadow: none;
+  &:hover{
+    box-shadow: 0 3px 22px 0 rgba(0,0,0,0.12);
+    .title{
+      display: none;
+    }
+    .price{
+      display: inline;
+      -webkit-animation: opacity .3s ease-in;
+      -o-animation: opacity .3s ease-in;
+      animation: opacity .3s ease-in;
+    }
+    .arrow{
+      display: block;
+      -webkit-animation: opacity .2s ease-in;
+      -o-animation: opacity .2s ease-in;
+      animation: opacity .2s ease-in;
+    }
+    .tile-item__img{
+      img{
+        opacity: .5;
+      }
+    }
+    .tile-item__img--hover{
+      opacity: 1;
+    }
+  }
+  &__img {
+    margin-bottom: 32px;
+    position: relative;
+    img{
+      max-width: 100%;
+      width: 100%;
+      transition: all .2s;
+    }
+    &--hover{
+      background: rgba(59, 53, 165, 0.5);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      opacity: 0;
+      transition: all .2s;
+    }
+
+  }
+  &__text {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 103px;
+    padding-bottom: 40px;
+    &__text {
+      font-size: 14px;
+      color: #706E7A;
+      letter-spacing: 0;
+      line-height: 20px;
+      min-height: 60px;
+    }
+    &__title {
+      font-size: 36px;
+      color: #07041A;
+      letter-spacing: -0.5px;
+      line-height: 48px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      @media(max-width:991px){
+        white-space: nowrap;
+        font-size: 20px;
+      }
+      .price{
+        transform: translateX(-200px);
+        color: #3DD89D;
+        display: none;
+      }
+
+    }
+    .arrow {
+      display: none;
+      top: 43px;
+      right: 45px;
+      position: absolute;
+    }
+  }
+
+  &.blog{
+    border: 1px solid #EBEAF2;
+    border-radius: 10px;
+    &:hover{
+      .tile-item__text__title{
+        color: #3DD89D;
+      }
+    }
+    .tile-item__text{
+      padding-left: 31px;
+      padding-bottom: 15px;
+      padding-right: 35px;
+      min-height: 246px;
+    }
+
+    .tile-item__text__title{
+      font-size: 15px;
+      font-weight: 500;
+      color: #07041A;
+      letter-spacing: 0;
+      transition: all .2s;
+      line-height: 25px;
+      margin-bottom: 17px;
+    }
+    .tile-item__text__text{
+      font-size: 14px;
+      color: #706E7A;
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+    .tile-item__img{
+      margin-bottom: 29px;
+    }
+  }
+
+}
+.main-tariffes{
+  padding-top: 57px;
+  padding-bottom: 32px;
+}
+@keyframes opacity {
+  0%{
+    opacity: 0;
+    transform: translateX(-20px);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
