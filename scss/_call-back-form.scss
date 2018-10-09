@@ -1,17 +1,27 @@
-.call-back-form{
+.call-back-form {
   background: #F8F7FA;
   padding: 34px 48px 34px 40px;
   top: 89px;
   margin-bottom: 16px;
-  .close-form{
+  .close-form {
     display: none;
   }
-  @media(max-width: 991px){
+  .close-modal {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  @media(max-width: 991px) {
     padding: 20px 15px 40px;
     height: 100vh;
     z-index: 5000;
     position: relative;
-    .close-form{
+    .close-form {
       display: block;
       padding: 0;
       border: 0;
@@ -22,33 +32,94 @@
     }
   }
 
-  .input-form{
+  .input-form {
     margin-bottom: 16px;
 
-    &.mb-16{
+    &.mb-16 {
       margin-bottom: 16px;
     }
+    &.mb-26 {
+      margin-bottom: 26px;
+    }
   }
-  button{
+  button {
     margin-bottom: 21px;
   }
-  .checkbox-form{
+  .checkbox-form {
     padding-left: 25px;
-    @media(max-width:991px){
+    @media(max-width: 991px) {
       padding-left: 3px;
     }
   }
+  .date-time-row {
+    display: flex;
+    margin-bottom: 24px;
+    &__item {
+      margin-right: 16px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+      label {
+        width: 100%;
+        margin-bottom: 13px;
+        font-size: 14px;
+        color: #07041A;
+        letter-spacing: 0;
+        line-height: 19px;
+      }
+      input {
+        height: 40px;
+        width: 110px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: white;
+        text-align: center;
+        border: 1px solid #D1CEF4;
+        border-radius: 4px;
+        transition: all .2s;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 20px;
+        color: $purple;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+        &::placeholder {
+          color: #6E69B2;
+        }
+        &::-moz-placeholder {
+          color: #6E69B2;
+        }
+        &::-webkit-input-placeholder {
+          color: #6E69B2;
+        }
+        &::-ms-input-placeholder {
+          color: #6E69B2;
+        }
+        &:focus {
+          border: 1px solid $purple;
+          outline: none;
+        }
+
+      }
+    }
+  }
+
 }
-.call-back-form__title{
+
+.call-back-form__title {
   font-size: 24px;
-  @media(max-width:991px){
+  @media(max-width: 991px) {
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 28px;
   }
   color: #3B35A5;
   letter-spacing: 0;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
   font-weight: 500;
   line-height: 32px;
 }

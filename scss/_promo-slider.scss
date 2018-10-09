@@ -20,8 +20,10 @@
     .dots{
       position: absolute;
       bottom: 45px;
+      cursor: pointer;
     }
     .text {
+      background: rgba(59, 53, 165, 0.5);
       position: absolute;
       align-items: center;
       justify-content: center;

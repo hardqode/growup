@@ -10,7 +10,10 @@
 
 .slider-container{
   margin-top: 7px;
-  margin-bottom: 35px;
+  margin-bottom: 46px;
+  &.mb-37{
+    margin-bottom: 37px;
+  }
 
   .slider-label{
     font-weight: 300;
@@ -37,6 +40,27 @@
       }
       &:nth-of-type(3){
         margin-right: auto;
+      }
+    }
+    &.hall{
+      span{
+        font-size: 14px;
+        color: #6E69B2;
+        letter-spacing: 0;
+        font-weight: 300;
+        line-height: 20px;
+        &:nth-of-type(1){
+          margin-left: 0;
+          margin-right: 75px;
+        }
+        &:nth-of-type(2){
+          margin-left: 0;
+          margin-right: 0;
+        }
+        &:nth-of-type(3){
+          margin-right: 0;
+          margin-left: auto;
+        }
       }
     }
   }

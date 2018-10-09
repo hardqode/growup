@@ -52,7 +52,7 @@
                 <a href="index.html">
                     <img src="./assets/svg/growup-logo.svg" alt="">
                 </a>
-                <a  role="button" data-placement="bottom" class="change-city" data-toggle="popover">
+                <a role="button" data-placement="bottom" class="change-city" data-toggle="popover">
                     <div class="change-city__title">Москва</div>
                 </a>
 
@@ -67,7 +67,8 @@
             </div>
             <div class="col-auto phone-block">
                 <a href="tel:+7 495 555 55 55" class="phone">+7 495 555 55 55</a>
-                <a href="#" class="call-back">Обратный звонок</a>
+                <a href="#" class="call-back" data-target="#callBack" data-toggle="modal" role="button">Обратный
+                    звонок</a>
             </div>
             <div class="col-auto d-none login-block">
                 <a href="#">ВОЙТИ</a>
@@ -140,26 +141,24 @@
         </div>
     </div>
 </header>
-
-
 <section class="promo-slider" data-toggle="modal" data-target="#sliderModal">
     <div class="item">
         <div class="bg-block">
-            <img src="./assets/img/slider2.png" alt="">
+            <img src="./assets/img/msk-promo.jpg" alt="">
         </div>
         <div class="text">
             <h3>от <span class="big">2</span> до <span class="big">24</span> чел.</h3>
             <p>офисы для работы в команде или соло</p>
         </div>
         <div class="dots">
-            <img src="./assets/img/dots.svg" alt="">
+            <img src="assets/svg/dots.svg" alt="">
         </div>
     </div>
     <!--<div class="promo-slider-nav">-->
-        <!--<button class="btn-left" data-toggle="modal" data-target="#sliderModal"><img-->
-                <!--src="./assets/svg/slider-arrow-left.svg" alt=""></button>-->
-        <!--<button class="btn-right" data-toggle="modal" data-target="#sliderModal"><img-->
-                <!--src="./assets/svg/slider-arrow-right.svg" alt=""></button>-->
+    <!--<button class="btn-left" data-toggle="modal" data-target="#sliderModal"><img-->
+    <!--src="./assets/svg/slider-arrow-left.svg" alt=""></button>-->
+    <!--<button class="btn-right" data-toggle="modal" data-target="#sliderModal"><img-->
+    <!--src="./assets/svg/slider-arrow-right.svg" alt=""></button>-->
     <!--</div>-->
 </section>
 <section class="promo-mobile-slider">
@@ -240,8 +239,6 @@
 
     </div>
 </div>
-
-
 <section class="content-section">
     <div class="container">
         <div class="row">
@@ -263,7 +260,7 @@
                 <div class="info-container">
                     <p class="text-normal text-purple">Стоимость аренды офиса в коворкинге GrowUp:</p>
                     <p class="text-normal">17 000 рублей за одно рабочее место в офисе</p>
-                    <p class="text-normal">До 1 ноября  11 900 рублей (<span class="text-red">скидка 30%</span>)</p>
+                    <p class="text-normal">До 1 ноября 11 900 рублей (<span class="text-red">скидка 30%</span>)</p>
                 </div>
                 <h3 class="h3 opportunities-header">Что еще мы получим <br class="d-none d-lg-block"> вместе с офисом?
                 </h3>
@@ -289,7 +286,7 @@
                                     </g>
                                 </svg>
                             </a>
-                            <button class="button btn-grn-outline">Забронировать</button>
+                            <button class="button btn-grn-outline" data-toggle="modal" data-target="#roomBookingModal">Забронировать</button>
                         </div>
                         <div class="collapse" id="collapse1">
                             <div class="mobile-text-block">
@@ -297,7 +294,7 @@
                                 <p> Предоставим флипчарты и канцелярку, мультимедиа и кейтеринг, а приветливый ресепшн
                                     встретит ваших гостей.</p>
                                 <p> Есть переговорки от 2 до 30 человек.</p>
-                                <button class="button btn-grn-outline">Забронировать</button>
+                                <button class="button btn-grn-outline" data-toggle="modal" data-target="#roomBookingModal">Забронировать</button>
 
                             </div>
                         </div>
@@ -329,7 +326,7 @@
                                     </g>
                                 </svg>
                             </a>
-                            <button class="button btn-grn-outline">Забронировать</button>
+                            <button class="button btn-grn-outline" data-toggle="modal" data-target="#hallBookingModal">Забронировать</button>
                         </div>
                         <div class="collapse" id="collapse2">
                             <div class="mobile-text-block">
@@ -337,7 +334,7 @@
                                     презентации не
                                     зависнут, гости
                                     не потеряются, кофе будет горячим.</p>
-                                <button class="button btn-grn-outline">Забронировать</button>
+                                <button class="button btn-grn-outline" data-toggle="modal" data-target="#hallBookingModal">Забронировать</button>
 
                             </div>
                         </div>
@@ -626,8 +623,9 @@
                         <input type="text" placeholder="Email" required data-inputmask="'alias': 'email'">
                         <span class="error-msg">Некорректно заполнено поле</span>
                     </div>
-                    <div class="input-form">
-                        <input type="text" placeholder="Номер телефона" required data-inputmask="'mask': '+7(999) 999-99-99'">
+                    <div class="input-form mb-26">
+                        <input type="text" placeholder="Номер телефона" required
+                               data-inputmask="'mask': '+7(999) 999-99-99'">
                         <span class="error-msg">Некорректно заполнено поле</span>
                     </div>
                     <div class="slider-container">
@@ -666,7 +664,7 @@
                     <a href="#" class="logo">
                         <img src="./assets/svg/growup-logo-b.svg" alt="">
                     </a>
-                    <a  role="button" data-placement="bottom" class="change-city" data-toggle="popover">
+                    <a role="button" data-placement="bottom" class="change-city" data-toggle="popover">
                         <div class="change-city__title">Москва</div>
                     </a>
 
@@ -955,6 +953,329 @@
     </div>
 
 </section>
+
+<div class="modal fade" tabindex="-1" id="officeModal" role="dialog">
+    <div class="modal-dialog modal-form" role="document">
+        <div class="modal-content">
+            <div class="call-back-form mb-0">
+                <div class="close-modal">
+                    <a href="#" role="button" data-dismiss="modal">
+                        <svg width="20px" height="35px" viewBox="0 0 19 20" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Галлерея-лайтбокс-(по-клику-на-заглавные-картинки-лендингов)"
+                                   transform="translate(-285.000000, -19.000000)" fill="#3DD89D">
+                                    <g id="Group-Copy" transform="translate(284.000000, 19.000000)">
+                                        <rect id="Rectangle-7-Copy"
+                                              transform="translate(10.500000, 10.000000) rotate(45.000000) translate(-10.500000, -10.000000) "
+                                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                                        <rect id="Rectangle-7-Copy"
+                                              transform="translate(10.500000, 10.000000) rotate(-45.000000) translate(-10.500000, -10.000000) "
+                                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <h4 class="call-back-form__title">Хочу на экскурсию! </h4>
+                <div class="input-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <div class="input-form">
+                    <input type="text" placeholder="Email" required data-inputmask="'alias': 'email'">
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <div class="input-form mb-26">
+                    <input type="text" placeholder="Номер телефона" required
+                           data-inputmask="'mask': '+7(999) 999-99-99'">
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <div class="slider-container">
+                    <span class="slider-label">На сколько человек вам нужен офис?</span>
+                    <div class="slider-ticks">
+                        <span>2</span>
+                        <span>4</span>
+                        <span>15</span>
+                        <span>24</span>
+                    </div>
+                    <div class="slider" id="group-sliderModal"></div>
+                </div>
+                <button class="button btn-grn btn-block">Отправить заявку</button>
+                <div class="checkbox-form">
+                    <input type="checkbox" id="agreementModal1">
+                    <label for="agreementModal1">Я подтверждаю свое согласие на передачу и обработку персональных данных
+                        в
+                        соответствии с соглашением</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="callBack" role="dialog">
+    <div class="modal-dialog modal-form" role="document">
+        <div class="modal-content">
+            <div class="call-back-form mb-0">
+                <div class="close-modal">
+                    <a href="#" role="button" data-dismiss="modal">
+                        <svg width="20px" height="35px" viewBox="0 0 19 20" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Галлерея-лайтбокс-(по-клику-на-заглавные-картинки-лендингов)"
+                                   transform="translate(-285.000000, -19.000000)" fill="#3DD89D">
+                                    <g id="Group-Copy" transform="translate(284.000000, 19.000000)">
+                                        <rect id="Rectangle-7-Copy"
+                                              transform="translate(10.500000, 10.000000) rotate(45.000000) translate(-10.500000, -10.000000) "
+                                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                                        <rect id="Rectangle-7-Copy"
+                                              transform="translate(10.500000, 10.000000) rotate(-45.000000) translate(-10.500000, -10.000000) "
+                                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <h4 class="call-back-form__title">Перезвоните мне </h4>
+                <div class="input-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <div class="input-form mb-26">
+                    <input type="text" placeholder="Номер телефона" required
+                           data-inputmask="'mask': '+7(999) 999-99-99'">
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <button class="button btn-grn btn-block">Отправить заявку</button>
+                <div class="checkbox-form">
+                    <input type="checkbox" id="callBackAgreement">
+                    <label for="callBackAgreement">Я подтверждаю свое согласие на передачу и обработку персональных данных
+                        в
+                        соответствии с соглашением</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="coworkingModal" role="dialog">
+    <div class="modal-dialog modal-form" role="document">
+        <div class="modal-content">
+            <div class="call-back-form mb-0">
+                <div class="close-modal">
+                    <a href="#" role="button" data-dismiss="modal">
+                        <svg width="20px" height="35px" viewBox="0 0 19 20" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Галлерея-лайтбокс-(по-клику-на-заглавные-картинки-лендингов)"
+                                   transform="translate(-285.000000, -19.000000)" fill="#3DD89D">
+                                    <g id="Group-Copy" transform="translate(284.000000, 19.000000)">
+                                        <rect id="Rectangle-7-Copy"
+                                              transform="translate(10.500000, 10.000000) rotate(45.000000) translate(-10.500000, -10.000000) "
+                                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                                        <rect id="Rectangle-7-Copy"
+                                              transform="translate(10.500000, 10.000000) rotate(-45.000000) translate(-10.500000, -10.000000) "
+                                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <h4 class="call-back-form__title">Хочу на экскурсию! </h4>
+                <div class="input-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <div class="input-form">
+                    <input type="text" placeholder="Email" required data-inputmask="'alias': 'email'">
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <div class="input-form mb-26">
+                    <input type="text" placeholder="Номер телефона" required
+                           data-inputmask="'mask': '+7(999) 999-99-99'">
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <button class="button btn-grn btn-block">Отправить заявку</button>
+                <div class="checkbox-form">
+                    <input type="checkbox" id="cowcallBackAgreement">
+                    <label for="cowcallBackAgreement">Я подтверждаю свое согласие на передачу и обработку персональных данных
+                        в
+                        соответствии с соглашением</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="roomBookingModal" role="dialog">
+    <div class="modal-dialog modal-form" role="document">
+        <div class="modal-content">
+            <div class="call-back-form mb-0">
+                <div class="close-modal">
+                    <a href="#" role="button" data-dismiss="modal">
+                        <svg width="20px" height="35px" viewBox="0 0 19 20" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Галлерея-лайтбокс-(по-клику-на-заглавные-картинки-лендингов)"
+                                   transform="translate(-285.000000, -19.000000)" fill="#3DD89D">
+                                    <g id="Group-Copy" transform="translate(284.000000, 19.000000)">
+                                        <rect id="Rectangle-7-Copy"
+                                              transform="translate(10.500000, 10.000000) rotate(45.000000) translate(-10.500000, -10.000000) "
+                                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                                        <rect id="Rectangle-7-Copy"
+                                              transform="translate(10.500000, 10.000000) rotate(-45.000000) translate(-10.500000, -10.000000) "
+                                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <h4 class="call-back-form__title">Забронировать переговорную комнату </h4>
+                <div class="input-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <div class="input-form mb-26">
+                    <input type="text" placeholder="Номер телефона" required
+                           data-inputmask="'mask': '+7(999) 999-99-99'">
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <div class="slider-container mb-37">
+                    <span class="slider-label">На сколько человек вам нужна переговорная?</span>
+                    <div class="slider-ticks">
+                        <span>2</span>
+                        <span>4</span>
+                        <span>15</span>
+                        <span>24</span>
+                    </div>
+                    <div class="slider" id="group-sliderRoomModal"></div>
+                </div>
+                <div class="date-time-row">
+                    <div class="date-time-row__item">
+                        <label for="date">Дата:</label>
+                        <input type="text" id="date" data-inputmask="'mask':'99/99/9999'">
+                    </div>
+                    <div class="date-time-row__item">
+                        <label for="dateS">Время с:</label>
+                        <input type="text" id="dateS" data-inputmask="'mask':'HH:MM'">
+                    </div>
+                    <div class="date-time-row__item">
+                        <label for="dateF">До:</label>
+                        <input type="text" id="dateF" data-inputmask="'mask':'99/99/9999'">
+                    </div>
+                </div>
+                <button class="button btn-grn btn-block">Отправить заявку</button>
+                <div class="checkbox-form">
+                    <input type="checkbox" id="roomBookingModalAgreement">
+                    <label for="roomBookingModalAgreement">Я подтверждаю свое согласие на передачу и обработку персональных данных
+                        в
+                        соответствии с соглашением</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" id="hallBookingModal" role="dialog">
+    <div class="modal-dialog modal-form" role="document">
+        <div class="modal-content">
+            <div class="call-back-form mb-0">
+                <div class="close-modal">
+                    <a href="#" role="button" data-dismiss="modal">
+                        <svg width="20px" height="35px" viewBox="0 0 19 20" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Галлерея-лайтбокс-(по-клику-на-заглавные-картинки-лендингов)"
+                                   transform="translate(-285.000000, -19.000000)" fill="#3DD89D">
+                                    <g id="Group-Copy" transform="translate(284.000000, 19.000000)">
+                                        <rect id="Rectangle-7-Copy"
+                                              transform="translate(10.500000, 10.000000) rotate(45.000000) translate(-10.500000, -10.000000) "
+                                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                                        <rect id="Rectangle-7-Copy"
+                                              transform="translate(10.500000, 10.000000) rotate(-45.000000) translate(-10.500000, -10.000000) "
+                                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <h4 class="call-back-form__title">Забронировать зал </h4>
+                <div class="input-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <div class="input-form mb-26">
+                    <input type="text" placeholder="Номер телефона" required
+                           data-inputmask="'mask': '+7(999) 999-99-99'">
+                    <span class="error-msg">Некорректно заполнено поле</span>
+                </div>
+                <div class="slider-container">
+                    <span class="slider-label">На сколько человек вам нужна переговорная?</span>
+                    <div class="slider-ticks hall">
+                        <span>50</span>
+                        <span>70</span>
+                        <span>250</span>
+                    </div>
+                    <div class="slider" id="group-sliderHallModal"></div>
+                </div>
+                <div class="date-time-row">
+                    <div class="date-time-row__item">
+                        <label for="date">Дата:</label>
+                        <input type="text" id="dateHall" data-inputmask="'mask':'99/99/9999'">
+                    </div>
+                    <div class="date-time-row__item">
+                        <label for="dateS">Время с:</label>
+                        <input type="text" id="dateSHall" data-inputmask="'mask':'HH:MM'">
+                    </div>
+                    <div class="date-time-row__item">
+                        <label for="dateF">До:</label>
+                        <input type="text" id="dateFHall" data-inputmask="'mask':'99/99/9999'">
+                    </div>
+                </div>
+                <div class="checkbox-container">
+                    <div class="checkbox-container__item">
+                        <input type="checkbox" id="itemsCheck1">
+                        <label for="itemsCheck1">
+                            <span class="custom-check">
+                                <img src="./assets/svg/tick.svg" alt="">
+                                <span class="circle"></span>
+                            </span>
+                            Проектор — 750 рублей/час
+                        </label>
+                    </div>
+                    <div class="checkbox-container__item">
+                        <input type="checkbox" id="itemsCheck2">
+                        <label for="itemsCheck2">
+                             <span class="custom-check">
+                                <img src="./assets/svg/tick.svg" alt="">
+                                <span class="circle"></span>
+                            </span>
+                            Аудио-система, <br>  флипчарт — 750 рублей/час
+                        </label>
+                    </div>
+                </div>
+                <button class="button btn-grn btn-block">Отправить заявку</button>
+                <div class="checkbox-form">
+                    <input type="checkbox" id="HallBookingModalAgreement">
+                    <label for="HallBookingModalAgreement">Я подтверждаю свое согласие на передачу и обработку персональных данных
+                        в
+                        соответствии с соглашением</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
@@ -967,7 +1288,7 @@
     $(function () {
         $('[data-toggle="popover"]').popover({
             html: true,
-            content:'<div class="change-city__popover">' +
+            content: '<div class="change-city__popover">' +
             '<a href="#">Санкт-Петербург</a>' +
             '<a href="#">Казань</a>' +
             '</div>'
@@ -1011,6 +1332,38 @@
             'max': [24, 0]
         },
         start: [2]
+    });
+    var pipsSliderModal = document.getElementById('group-sliderModal');
+
+    noUiSlider.create(pipsSliderModal, {
+        range: {
+            'min': [2, 2],
+            '17%': [4, 11],
+            '60%': [15, 9],
+            'max': [24, 0]
+        },
+        start: [2]
+    });
+    var pipsSliderRoomModal = document.getElementById('group-sliderRoomModal');
+
+    noUiSlider.create(pipsSliderRoomModal, {
+        range: {
+            'min': [2, 2],
+            '17%': [4, 11],
+            '60%': [15, 9],
+            'max': [24, 0]
+        },
+        start: [2]
+    });
+    var pipsSliderHallModal = document.getElementById('group-sliderHallModal');
+
+    noUiSlider.create(pipsSliderHallModal, {
+        range: {
+            'min': [50, 20],
+            '28%': [70, 180],
+            'max': [250, 0]
+        },
+        start: [50]
     });
 </script>
 <script>
