@@ -202,3 +202,41 @@
 
   }
 }
+
+.inline-radios{
+  display: flex;
+
+  input{
+    display: none;
+    &:checked + .inline-radios__item{
+      background: #3DD89D;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+  }
+  &__item{
+    padding: 9px 25px;
+    font-size: 14px;
+    border: 1px solid #3DD89D;
+    border-right: 0;
+    color: #3DD89D;
+    margin-bottom: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-left: -2px;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover{
+      background: rgba(61, 216, 157, 0.18);
+    }
+    &:first-of-type{
+      margin-left: 0;
+    }
+    &:last-of-type{
+      border-right: 1px solid #3DD89D;
+    }
+  }
+}

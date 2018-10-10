@@ -1,0 +1,29 @@
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item{
+    background: lightgrey;
+    margin-bottom: 25px;
+    &.col-1-3{
+      width: 32%;
+      height: 321px;
+    }
+    &.col-1-1{
+      width: 100%;
+      height: 655px;
+    }
+    &.col-2-5{
+      height: 398px;
+      width: 41%;
+    }
+    &.col-3-5{
+      height: 398px;
+      width: 57%;
+    }
+    @media(max-width:991px){
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+}

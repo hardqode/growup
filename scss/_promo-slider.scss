@@ -57,6 +57,20 @@
       }
     }
   }
+  &.--small{
+    .item{
+      max-height: 272px;
+      .text{
+        h3{
+          font-size: 36px;
+        }
+        p{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
   .promo-slider-nav {
     position: absolute;
     height: 100%;
@@ -103,6 +117,7 @@
       width: 100%;
     }
     .text {
+      background: rgba(59, 53, 165, 0.5);
       position: absolute;
       align-items: center;
       justify-content: center;
