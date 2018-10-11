@@ -62,8 +62,8 @@
                 <a href="offices.html" class="link">Офисы</a>
                 <a href="#" class="link ">Переговорные</a>
                 <a href="#" class="link">Конференц-зал</a>
-                <a href="#" class="link">Тарифы</a>
-                <a href="#" class="link active">Галерея</a>
+                <a href="#" class="link active">Тарифы</a>
+                <a href="#" class="link ">Галерея</a>
             </div>
             <div class="col-auto phone-block">
                 <a href="tel:+7 495 555 55 55" class="phone">+7 495 555 55 55</a>
@@ -175,7 +175,7 @@
                         <span class="--old">12 700</span><span>8 890 </span>руб.
                         <div class="--text">Круглосуточный доступ</div>
                     </div>
-                    <button class="button btn-grn btn-block">Начать работать</button>
+                    <button class="button btn-grn btn-block" data-toggle="modal" data-target="#coworkingModal">Начать работать</button>
 
                 </div>
             </div>
@@ -201,7 +201,7 @@
                         <span class="--old">17 000</span><span>11 900 </span>руб.
                         <div class="--text">Круглосуточный доступ</div>
                     </div>
-                    <button class="button btn-grn btn-block">Начать работать</button>
+                    <button class="button btn-grn btn-block" data-toggle="modal" data-target="#officeModal">Начать работать</button>
 
                 </div>
             </div>
@@ -215,7 +215,7 @@
                     <div class="tariffes__tile--text v2">10 человек — 1 000 рублей</div>
                     <div class="tariffes__tile--text v2">30 человек — 2 000 рублей</div>
 
-                    <button class="button btn-grn btn-block">забронировать</button>
+                    <button class="button btn-grn btn-block" data-toggle="modal" data-target="#roomBookingModal">забронировать</button>
 
                 </div>
 
@@ -226,7 +226,7 @@
 
                     <div class="tariffes__tile--text v2">От 750 рублей</div>
 
-                    <button class="button btn-grn btn-block">забронировать</button>
+                    <button class="button btn-grn btn-block" data-toggle="modal" data-target="#hallBookingModal">забронировать</button>
 
                 </div>
             </div>
@@ -911,41 +911,8 @@
     })
 </script>
 <script>
-    var pipsSliderRoom = document.getElementById('group-sliderRoom');
 
-    noUiSlider.create(pipsSliderRoom, {
-        range: {
-            'min': [2, 2],
-            '17%': [4, 11],
-            '60%': [15, 9],
-            'max': [24, 0]
-        },
-        start: [2]
-    });
 
-    var pipsSliderRoom = document.getElementById('group-sliderRoom1');
-
-    noUiSlider.create(pipsSliderRoom, {
-        range: {
-            'min': [2, 2],
-            '17%': [4, 11],
-            '60%': [15, 9],
-            'max': [24, 0]
-        },
-        start: [2]
-    });
-
-    var pipsSlider2 = document.getElementById('group-slider2');
-
-    noUiSlider.create(pipsSlider2, {
-        range: {
-            'min': [2, 2],
-            '20%': [4, 11],
-            '74%': [15, 9],
-            'max': [24, 0]
-        },
-        start: [2]
-    });
     var pipsSliderModal = document.getElementById('group-sliderModal');
 
     noUiSlider.create(pipsSliderModal, {
@@ -968,6 +935,8 @@
         },
         start: [2]
     });
+
+
     var pipsSliderHallModal = document.getElementById('group-sliderHallModal');
 
     noUiSlider.create(pipsSliderHallModal, {
