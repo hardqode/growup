@@ -257,6 +257,9 @@
   background: url("../assets/img/subscribe-green-bg.png");
   background-size: cover;
   height: 290px;
+  &.purple{
+    background: url("../assets/img/subscribe-purple-bg.png");
+  }
   .container, .row {
     height: 100%;
   }

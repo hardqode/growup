@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/nouislider.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="./css/build.css">
@@ -54,18 +55,20 @@
                 <a role="button" data-placement="bottom" class="change-city" data-toggle="popover">
                     <div class="change-city__title">Москва</div>
                 </a>
+
             </div>
             <div class="col-auto nav-links mx-auto">
-                <a href="index.html" class="link active">Open Space</a>
+                <a href="index.html" class="link ">Open Space</a>
                 <a href="offices.html" class="link">Офисы</a>
-                <a href="#" class="link">Переговорные</a>
+                <a href="#" class="link ">Переговорные</a>
                 <a href="#" class="link">Конференц-зал</a>
                 <a href="#" class="link">Тарифы</a>
                 <a href="#" class="link">Галерея</a>
             </div>
             <div class="col-auto phone-block">
                 <a href="tel:+7 495 555 55 55" class="phone">+7 495 555 55 55</a>
-                <a href="#" class="call-back" data-toggle="modal" data-target="#callBack">Обратный звонок</a>
+                <a href="#" class="call-back" data-target="#callBack" data-toggle="modal" role="button">Обратный
+                    звонок</a>
             </div>
             <div class="col-auto d-none login-block">
                 <a href="#">ВОЙТИ</a>
@@ -75,7 +78,7 @@
             <div class="mobile-menu">
                 <div class="main-menu">
                     <div class="link-container">
-                        <a href="index.html" class="h3">Open Space</a>
+                        <a href="index.html" class="h3">Open space</a>
                     </div>
                     <div class="link-container">
                         <a href="offices.html" class="h3">Офисы</a>
@@ -108,10 +111,10 @@
                                 <a href="#">О компании</a>
                             </div>
                             <div class="link-container">
-                                <a href="#">Партнеры</a>
+                                <a href="#">Партнёры</a>
                             </div>
                             <div class="link-container">
-                                <a href="#">Контакты</a>
+                                <a href="#">Резиденты</a>
                             </div>
                         </div>
                     </div>
@@ -138,308 +141,110 @@
         </div>
     </div>
 </header>
-<section class="promo big-promo">
-    <div class="container">
-        <div class="big-promo-container">
-            <div class="big-promo-container__title">
-                GrowUp — платформа роста
-            </div>
-            <div class="big-promo-container__text">
-                м. Войковская, ул. Космонавта Волкова, 6а
-            </div>
-            <div class="big-promo-container__btn">
-                <button class="button btn-grn">Бесплатный день в коворкинге</button>
-            </div>
-            <div class="big-promo-container__nav">
-                <div class="nav__title">Федеральная сеть коворкингов</div>
-                <a href="#" class="nav__item active">Москва</a> |
-                <a href="#" class="nav__item">Санкт-Петербург</a> |
-                <a href="#" class="nav__item">Казань</a>
-            </div>
+<section class="promo-slider --small" data-toggle="modal" data-target="#sliderModal">
+    <div class="item">
+        <div class="bg-block">
+            <img src="./assets/img/partners-promo-1.jpg" alt="">
+        </div>
+        <div class="text">
+            <h3 class="font-weight-bold">Резиденты</h3>
+            <p>GrowUp — это экосистема крутых специалистов. <br>  Все нужные люди уже здесь. Присоединяйтесь!</p>
+        </div>
+    </div>
+</section>
+<section class="promo-mobile-slider">
+    <div class="item">
+        <div class="bg-block">
+            <img src="./assets/img/partners-promo-1.jpg" alt="">
+        </div>
+        <div class="text">
+            <h3 class="font-weight-bold">Резиденты</h3>
+            <p>GrowUp — это экосистема крутых специалистов. <br>  Все нужные люди уже здесь. Присоединяйтесь!</p>
+        </div>
+    </div>
+</section>
+<div class="modal fade" id="sliderModal" tabindex="-1" role="dialog">
+    <button class="mobile-close-modal" data-dismiss="modal" aria-label="Close">
+        <svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Галлерея-лайтбокс-(по-клику-на-заглавные-картинки-лендингов)"
+                   transform="translate(-285.000000, -19.000000)" fill="#3DD89D">
+                    <g id="Group-Copy" transform="translate(284.000000, 19.000000)">
+                        <rect id="Rectangle-7-Copy"
+                              transform="translate(10.500000, 10.000000) rotate(45.000000) translate(-10.500000, -10.000000) "
+                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                        <rect id="Rectangle-7-Copy"
+                              transform="translate(10.500000, 10.000000) rotate(-45.000000) translate(-10.500000, -10.000000) "
+                              x="-2" y="9" width="25" height="2" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </button>
+    <div class="modal-dialog modal-slider" role="document">
 
-        </div>
-    </div>
-</section>
-<section class="bg-linear main-tariffes">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="tile-item">
-                    <div class="tile-item__img">
-                        <img src="./assets/img/main-opp-1.png" class="" alt="">
-                        <div class="tile-item__img--hover"></div>
+        <div class="modal-content">
+            <button class="close-modal" data-dismiss="modal" aria-label="Close">
+                <svg width="31px" height="31px" viewBox="0 0 31 31" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Галлерея-лайтбокс-(по-клику-на-заглавные-картинки-лендингов)"
+                           transform="translate(-1100.000000, -99.000000)" fill="#3DD89D">
+                            <path d="M1114.13251,113.132511 L1114.13251,93.9748737 L1116.57817,93.9748737 L1116.57817,113.132511 L1135.7358,113.132511 L1135.7358,115.578167 L1116.57817,115.578167 L1116.57817,134.735804 L1114.13251,134.735804 L1114.13251,115.578167 L1094.97487,115.578167 L1094.97487,113.132511 L1114.13251,113.132511 Z"
+                                  id="Combined-Shape"
+                                  transform="translate(1115.355339, 114.355339) rotate(45.000000) translate(-1115.355339, -114.355339) "></path>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+            <div class=" owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./assets/img/modal-slider.png" alt="">
+                    <div class="text">
+                        <p> Всё для вашей продуктивности. Лучше работается, <br> когда стены в офисе зелёные, а столы
+                            стоят
+                            полукругом?</p>
                     </div>
-                    <div class="tile-item__text">
-                        <div class="tile-item__text__title"><span class="title">Офисы</span><span class="price">От 8 890 рублей</span>
-                        </div>
-                        <div class="tile-item__text__text">Для работы в команде или соло. Выбирай, где будет расти твой
-                            бизнес.
-                        </div>
-                        <div class="arrow">
-                            <svg width="34px" height="21px" viewBox="0 0 34 21" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-                                <desc>Created with Sketch.</desc>
-                                <defs></defs>
-                                <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Главная" transform="translate(-1082.000000, -987.000000)" fill="#3DD89D"
-                                       fill-rule="nonzero">
-                                        <path d="M1092.06159,1008 L1094.53935,1005.47612 C1090.64838,1001.34886 1088.70289,999.285224 1088.70289,999.285224 L1116,999.285224 L1116,995.715221 L1088.70289,995.715221 L1094.53935,989.52432 L1092.06159,987 L1082,997.49822 L1092.06159,1008 Z"
-                                              id="Shape-Copy"
-                                              transform="translate(1099.000000, 997.500000) rotate(180.000000) translate(-1099.000000, -997.500000) "></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/slider2.png" alt="">
+                    <div class="text">
+                        <p> Всё для вашей продуктивности. Лучше работается, <br> когда стены в офисе зелёные, а столы
+                            стоят
+                            полукругом?</p>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
-                <div class="tile-item">
-                    <div class="tile-item__img">
-                        <img src="./assets/img/main-opp-2.png" class="" alt="">
-                        <div class="tile-item__img--hover"></div>
-                    </div>
-                    <div class="tile-item__text">
-                        <div class="tile-item__text__title"><span class="title">Open space</span><span class="price">От 8 890 рублей</span>
-                        </div>
-                        <div class="tile-item__text__text">Идеально для фрилансеров и растущих команд. Работай там, где
-                            удобно, когда удобно и сколько угодно.
-                        </div>
-                        <div class="arrow">
-                            <svg width="34px" height="21px" viewBox="0 0 34 21" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-                                <desc>Created with Sketch.</desc>
-                                <defs></defs>
-                                <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Главная" transform="translate(-1082.000000, -987.000000)" fill="#3DD89D"
-                                       fill-rule="nonzero">
-                                        <path d="M1092.06159,1008 L1094.53935,1005.47612 C1090.64838,1001.34886 1088.70289,999.285224 1088.70289,999.285224 L1116,999.285224 L1116,995.715221 L1088.70289,995.715221 L1094.53935,989.52432 L1092.06159,987 L1082,997.49822 L1092.06159,1008 Z"
-                                              id="Shape-Copy"
-                                              transform="translate(1099.000000, 997.500000) rotate(180.000000) translate(-1099.000000, -997.500000) "></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="tile-item">
-                    <div class="tile-item__img">
-                        <img src="./assets/img/main-opp-3.png" class="" alt="">
-                        <div class="tile-item__img--hover"></div>
-                    </div>
-                    <div class="tile-item__text">
-                        <div class="tile-item__text__title"><span class="title">Переговорные</span><span class="price">От 8 890 рублей</span>
-                        </div>
-                        <div class="tile-item__text__text">Проводите совещание? Организуете переговоры? Собеседуете
-                            кандидатов? Предоставим флипчарты и канцелярку, мультимедиа и кейтеринг, а приветливый
-                            ресепшн встретит ваших гостей.
-                        </div>
-                        <div class="arrow">
-                            <svg width="34px" height="21px" viewBox="0 0 34 21" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-                                <desc>Created with Sketch.</desc>
-                                <defs></defs>
-                                <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Главная" transform="translate(-1082.000000, -987.000000)" fill="#3DD89D"
-                                       fill-rule="nonzero">
-                                        <path d="M1092.06159,1008 L1094.53935,1005.47612 C1090.64838,1001.34886 1088.70289,999.285224 1088.70289,999.285224 L1116,999.285224 L1116,995.715221 L1088.70289,995.715221 L1094.53935,989.52432 L1092.06159,987 L1082,997.49822 L1092.06159,1008 Z"
-                                              id="Shape-Copy"
-                                              transform="translate(1099.000000, 997.500000) rotate(180.000000) translate(-1099.000000, -997.500000) "></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="tile-item">
-                    <div class="tile-item__img">
-                        <img src="./assets/img/main-opp-4.png" class="" alt="">
-                        <div class="tile-item__img--hover"></div>
-                    </div>
-                    <div class="tile-item__text">
-                        <div class="tile-item__text__title"><span class="title">Конференц-зал</span><span class="price">От 8 890 рублей</span>
-                        </div>
-                        <div class="tile-item__text__text">Ваши мероприятия в надежных руках команды <br> GrowUp.
-                            Микрофоны
-                            не вырубятся, презентации <br> не зависнут, гости не потеряются, кофе будет <br> горячим.
-                        </div>
-                        <div class="arrow">
-                            <svg width="34px" height="21px" viewBox="0 0 34 21" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-                                <desc>Created with Sketch.</desc>
-                                <defs></defs>
-                                <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Главная" transform="translate(-1082.000000, -987.000000)" fill="#3DD89D"
-                                       fill-rule="nonzero">
-                                        <path d="M1092.06159,1008 L1094.53935,1005.47612 C1090.64838,1001.34886 1088.70289,999.285224 1088.70289,999.285224 L1116,999.285224 L1116,995.715221 L1088.70289,995.715221 L1094.53935,989.52432 L1092.06159,987 L1082,997.49822 L1092.06159,1008 Z"
-                                              id="Shape-Copy"
-                                              transform="translate(1099.000000, 997.500000) rotate(180.000000) translate(-1099.000000, -997.500000) "></path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+            <div class="slider-nav">
+                <button class="btn-left"><img
+                        src="./assets/svg/slider-arrow-left.svg" alt=""></button>
+                <button class="btn-right"><img
+                        src="./assets/svg/slider-arrow-right.svg" alt=""></button>
             </div>
         </div>
+
     </div>
-</section>
-<section class="why-section">
+</div>
+<section class="partners-section py-5">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="why__title">Почему GrowUp</div>
+            <div class="col-12 col-lg-4">
+                <div class="tile-item ">
+                    <div class="tile-item__img">
+                        <img src="./assets/img/partner-1.png" alt="">
+                        <div class="tile-item__img--hover"></div>
+                    </div>
 
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="why__text">
-                    Ваш <strong>офис уже готов</strong>: кофе заварен, интернет подключен, ресепшн улыбается. Просто
-                    приходите и
-                    работайте без промедлений.
+                    <div class="tile-item__text h-auto">
 
-                </div>
-                <div class="why__text">
-                    <strong>Экосистема крутых специалистов</strong>: повышенная концентрация потенциальных партнёров,
-                    сотрудников,
-                    клиентов. Все нужные
-                    люди уже здесь.
-                </div>
-                <div class="why__text">
-                    <strong>Ваши мероприятия</strong> в надёжных руках команды GrowUp. Поможем организовать ивент, а ещё
-                    проводим свои –
-                    для резидентов коворкинга.
-
-                </div>
-                <div class="why__text">
-                    <strong>GrowUp – платформа для роста вашего бизнеса.</strong>
-
-                </div>
-
-
-            </div>
-            <div class="col-12 col-lg-6 why-items">
-                <div class="why-items__item">
-                    <div class="img">
-                        <img src="./assets/why/why-1.svg" alt="">
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
+                        </div>
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
+                        </div>
                     </div>
-                    <div class="text">
-                        Высокоскоростной
-                        интернет
-                    </div>
-                </div>
-                <div class="why-items__item">
-                    <div class="img">
-                        <img src="./assets/why/why-2.svg" alt="">
-                    </div>
-                    <div class="text">
-                        Переговорные
-                    </div>
-                </div>
-                <div class="why-items__item">
-                    <div class="img">
-                        <img src="./assets/why/why-3.svg" alt="">
-                    </div>
-                    <div class="text">
-                        Оборудованная кухня
-                    </div>
-                </div>
-                <div class="why-items__item">
-                    <div class="img">
-                        <img src="./assets/why/why-4.svg" alt="">
-                    </div>
-                    <div class="text">
-                        Уборка
-                    </div>
-                </div>
-                <div class="why-items__item">
-                    <div class="img">
-                        <img src="./assets/why/why-5.svg" alt="">
-                    </div>
-                    <div class="text">
-                        Ресепшн
-                    </div>
-                </div>
-                <div class="why-items__item">
-                    <div class="img">
-                        <img src="./assets/why/why-6.svg" alt="">
-                    </div>
-                    <div class="text">
-                        Охрана
-                    </div>
-                </div>
-                <div class="why-items__item">
-                    <div class="img">
-                        <img src="./assets/why/why-7.svg" alt="">
-                    </div>
-                    <div class="text">
-                        Вся необходимая техника
-                    </div>
-                </div>
-                <div class="why-items__item">
-                    <div class="img">
-                        <img src="./assets/why/why-8.svg" alt="">
-                    </div>
-                    <div class="text">
-                        Зоны отдыха
-                    </div>
-                </div>
-                <div class="why-items__item">
-                    <div class="img">
-                        <img src="./assets/why/why-9.svg" alt="">
-                    </div>
-                    <div class="text">
-                        Свежесваренный <br>
-                        кофе
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="abonement">
-    <div class="abonement__container">
-        <div class="abonement__title"> 1 абонемент</div>
-        <div class="abonement__item">
-            <div class="abonement__item--num">3</div>
-            <div class="abonement__item--text">города</div>
-        </div>
-        <div class="abonement__item">
-            <div class="abonement__item--num">7 000</div>
-            <div class="abonement__item--text">кв. метров рабочих пространств</div>
-        </div>
-        <div class="abonement__item">
-            <div class="abonement__item--num">1 500</div>
-            <div class="abonement__item--text">резидентов</div>
-        </div>
-        <div class="abonement__item">
-            <div class="abonement__item--num">150</div>
-            <div class="abonement__item--text">мест на парковке</div>
-        </div>
-    </div>
-</section>
-<section>
-    otzivy
-</section>
-<section>
-    meropriyatiya
-</section>
-<section class="partners-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="title">
-                    Партнёры
-                </div>
-                <div class="text">
-                    С нами приятно иметь дело
                 </div>
             </div>
             <div class="col-12 col-lg-4">
@@ -449,7 +254,7 @@
                         <div class="tile-item__img--hover"></div>
                     </div>
 
-                    <div class="tile-item__text">
+                    <div class="tile-item__text h-auto">
 
                         <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
                         </div>
@@ -457,124 +262,194 @@
                             Skyeng,
                             индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
                         </div>
-                        <div class="tile-item__text__text">(промокод *******)
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="tile-item ">
+                    <div class="tile-item__img">
+                        <img src="./assets/img/partner-1.png" alt="">
+                        <div class="tile-item__img--hover"></div>
+                    </div>
+
+                    <div class="tile-item__text h-auto">
+
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
+                        </div>
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-
                 <div class="tile-item ">
                     <div class="tile-item__img">
-                        <img src="./assets/img/partner-2.png" alt="">
+                        <img src="./assets/img/partner-1.png" alt="">
                         <div class="tile-item__img--hover"></div>
                     </div>
-                    <div class="tile-item__text">
-                        <div class="tile-item__text__title"> Точка - банк для предпринимателей
 
+                    <div class="tile-item__text h-auto">
+
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
                         </div>
-                        <div class="tile-item__text__text">Тариф для ИП с электронной сдачей отчетности в налоговую за
-                            3500 в год, с бесплатным снятием наличных и платежами контрагентам. Индивидуальные условия
-                            для резидентов, личный менеджер
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-
                 <div class="tile-item ">
                     <div class="tile-item__img">
-                        <img src="./assets/img/partner-3.png" alt="">
+                        <img src="./assets/img/partner-1.png" alt="">
                         <div class="tile-item__img--hover"></div>
                     </div>
-                    <div class="tile-item__text">
 
+                    <div class="tile-item__text h-auto">
 
-                        <div class="tile-item__text__title"> Нетология — университет по подготовке и дополнительному
-                            обучению специалистов
-
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
                         </div>
-                        <div class="tile-item__text__text"> 20 % скидка до конца года
-
-                        </div>
-                        <div class="tile-item__text__text"> (кодовое слово ******)
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 text-center">
-                <button class="button btn-grn">Все предложения</button>
+            <div class="col-12 col-lg-4">
+                <div class="tile-item ">
+                    <div class="tile-item__img">
+                        <img src="./assets/img/partner-1.png" alt="">
+                        <div class="tile-item__img--hover"></div>
+                    </div>
+
+                    <div class="tile-item__text h-auto">
+
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
+                        </div>
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-12 col-lg-4">
+                <div class="tile-item ">
+                    <div class="tile-item__img">
+                        <img src="./assets/img/partner-1.png" alt="">
+                        <div class="tile-item__img--hover"></div>
+                    </div>
+
+                    <div class="tile-item__text h-auto">
+
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
+                        </div>
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="tile-item ">
+                    <div class="tile-item__img">
+                        <img src="./assets/img/partner-1.png" alt="">
+                        <div class="tile-item__img--hover"></div>
+                    </div>
+
+                    <div class="tile-item__text h-auto">
+
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
+                        </div>
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="tile-item ">
+                    <div class="tile-item__img">
+                        <img src="./assets/img/partner-1.png" alt="">
+                        <div class="tile-item__img--hover"></div>
+                    </div>
+
+                    <div class="tile-item__text h-auto">
+
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
+                        </div>
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="tile-item ">
+                    <div class="tile-item__img">
+                        <img src="./assets/img/partner-1.png" alt="">
+                        <div class="tile-item__img--hover"></div>
+                    </div>
+
+                    <div class="tile-item__text h-auto">
+
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
+                        </div>
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="tile-item ">
+                    <div class="tile-item__img">
+                        <img src="./assets/img/partner-1.png" alt="">
+                        <div class="tile-item__img--hover"></div>
+                    </div>
+
+                    <div class="tile-item__text h-auto">
+
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
+                        </div>
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="tile-item ">
+                    <div class="tile-item__img">
+                        <img src="./assets/img/partner-1.png" alt="">
+                        <div class="tile-item__img--hover"></div>
+                    </div>
+
+                    <div class="tile-item__text h-auto">
+
+                        <div class="tile-item__text__title mb-2">Онлайн-школа английского языка нового поколения
+                        </div>
+                        <div class="tile-item__text__text mb-2"> 2 бесплатных урока при первой оплате новым ученикам
+                            Skyeng,
+                            индивидуальные условия для резидентов, 20%-ная скидка на все программы он-лайн обучения
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
-<section class="blog-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="title">
-                    Блог
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="tile-item blog">
-                    <div class="tile-item__img">
-                        <img src="./assets/img/blog-1.png" alt="">
-                        <div class="tile-item__img--hover"></div>
-                    </div>
-
-                    <div class="tile-item__text">
-                        <div class="tile-item__text__title">Вице-президент Twitter Брюс Дейсли: «Eat, sleep, work,
-                            repeat»
-                        </div>
-                        <div class="tile-item__text__text">Как не исхудать от стресса, куда бежать от вездесущих рабочих
-                            чатов, нужен ли перерыв в разгар аврала, и как при всём этом работать втрое эффективнее.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-
-                <div class="tile-item blog">
-                    <div class="tile-item__img">
-                        <img src="./assets/img/blog-2.png" alt="">
-                        <div class="tile-item__img--hover"></div>
-                    </div>
-                    <div class="tile-item__text">
-                        <div class="tile-item__text__title">Технологии в коворкинге: офисное пространство становится
-                            цифровым
-                        </div>
-                        <div class="tile-item__text__text">В одной из секций на MIPIM PropTech 2018 в Париже участвовал
-                            коворкинг WeWork. Представители тренд-сеттера сделали шокирующее заявление: в первую
-                            очередь, WeWork — вообще не коворкинг.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-
-                <div class="tile-item blog">
-                    <div class="tile-item__img">
-                        <img src="./assets/img/blog-3.png" alt="">
-                        <div class="tile-item__img--hover"></div>
-                    </div>
-                    <div class="tile-item__text">
-                        <div class="tile-item__text__title"> FuckUp Nights: реальные истории головокружительных неудач.
-                            Продолжение
-                        </div>
-                        <div class="tile-item__text__text">FuckUp Nights – это всемирное движение предпринимателей,
-                            которое в Петербурге поддерживает коворкинг GrowUp
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 text-center">
-                <button class="button btn-grn">Читать все статьи</button>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="subscribe">
+<section class="subscribe purple">
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-lg-6">
@@ -597,10 +472,7 @@
         </div>
     </div>
 </section>
-<section class="fullsizemap">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.7295197413396!2d37.51054641593295!3d55.815295980570156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b548317602af63%3A0x6ec9e50cc6e92f2c!2z0YPQuy4g0JrQvtGB0LzQvtC90LDQstGC0LAg0JLQvtC70LrQvtCy0LAsIDbQkCwg0JzQvtGB0LrQstCwLCAxMjcyOTk!5e0!3m2!1sru!2sru!4v1539104887970"
-            height="451" frameborder="0" style="border:0;width:100%" allowfullscreen></iframe>
-</section>
+
 <footer>
     <section class="green-line-container">
         <div class="container">
@@ -612,6 +484,7 @@
                     <a role="button" data-placement="bottom" class="change-city" data-toggle="popover">
                         <div class="change-city__title">Москва</div>
                     </a>
+
                     <span class="text-small d-none d-lg-inline-block">ул. космонавта Волкова, 6а</span>
                 </div>
                 <div class="ml-auto col-auto">
@@ -775,7 +648,7 @@
                     <a href="#" class="footer-link">О компании</a>
                 </div>
                 <div class="footer-link-container">
-                    <a href="#" class="footer-link">Партнёры</a>
+                    <a href="#" class="footer-link">Партнеры</a>
                 </div>
                 <div class="footer-link-container">
                     <a href="#" class="footer-link">Резиденты</a>
@@ -837,12 +710,13 @@
             <a href="#" class="text-small">FAQ</a>
             <a href="#" class="text-small">Договор оферты
             </a>
-            <a href="#" class="text-small">Правила работы</a>
+            <a href="#" class="text-small">Правила работы или что еще тут будет?</a>
             <a href="#" class="text-small">Собственникам недвижимости</a>
 
         </div>
     </div>
 </footer>
+
 <div class="modal fade" tabindex="-1" id="callBack" role="dialog">
     <div class="modal-dialog modal-form" role="document">
         <div class="modal-content">
@@ -881,7 +755,8 @@
                 <button class="button btn-grn btn-block">Отправить заявку</button>
                 <div class="checkbox-form">
                     <input type="checkbox" id="callBackAgreement">
-                    <label for="callBackAgreement">Я подтверждаю свое согласие на передачу и обработку персональных данных
+                    <label for="callBackAgreement">Я подтверждаю свое согласие на передачу и обработку персональных
+                        данных
                         в
                         соответствии с соглашением</label>
                 </div>
@@ -890,7 +765,6 @@
         </div>
     </div>
 </div>
-
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
@@ -906,6 +780,22 @@
             '<a href="#">Казань</a>' +
             '</div>'
         })
+    })
+</script>
+<script
+>
+    var modalSlider = $('.modal-slider .owl-carousel');
+    modalSlider.owlCarousel({
+        items: 1,
+        dots: false,
+        loop: true,
+        autoHeight: true
+    });
+    $('.modal-slider .btn-left').on('click', function () {
+        modalSlider.trigger('prev.owl.carousel')
+    })
+    $('.modal-slider .btn-right').on('click', function () {
+        modalSlider.trigger('next.owl.carousel')
     })
 </script>
 

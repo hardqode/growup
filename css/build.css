@@ -662,6 +662,8 @@ header {
   background: url("../assets/img/subscribe-green-bg.png");
   background-size: cover;
   height: 290px; }
+  .subscribe.purple {
+    background: url("../assets/img/subscribe-purple-bg.png"); }
   .subscribe .container, .subscribe .row {
     height: 100%; }
   .subscribe .title {
