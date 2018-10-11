@@ -1296,6 +1296,92 @@ footer .footer-container {
       footer .footer-container .footer-map {
         width: 100%; } }
 
+.tariffes {
+  background-image: linear-gradient(-180deg, #3B35A5 0%, #3DD89D 100%);
+  padding-bottom: 18px;
+  padding-top: 54px; }
+  .tariffes__title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: -0.5px;
+    text-align: center;
+    line-height: 48px;
+    margin-bottom: 19px; }
+  .tariffes__text {
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 72px; }
+  .tariffes__tile {
+    padding: 36px 37px 40px 38px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 22px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    margin-bottom: 36px;
+    min-height: 436px;
+    display: flex;
+    flex-direction: column; }
+    .tariffes__tile--title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #07041A;
+      letter-spacing: 0;
+      line-height: 32px;
+      margin-bottom: 13px; }
+      .tariffes__tile--title.mb-27 {
+        margin-bottom: 27px; }
+    .tariffes__tile--text {
+      font-size: 20px;
+      color: #07041A;
+      letter-spacing: 0;
+      line-height: 32px;
+      margin-bottom: 27px; }
+      .tariffes__tile--text.v2 {
+        margin-bottom: 13px; }
+        .tariffes__tile--text.v2:last-of-type {
+          margin-bottom: 32px; }
+    .tariffes__tile .inline-radios {
+      margin-bottom: 32px; }
+      .tariffes__tile .inline-radios label {
+        margin-bottom: 0; }
+    .tariffes__tile--rules {
+      padding-bottom: 32px;
+      border-bottom: 2px solid #EBEAF2;
+      margin-bottom: 24px; }
+      .tariffes__tile--rules .rule {
+        font-size: 14px;
+        color: #706E7A;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-bottom: 20px; }
+        .tariffes__tile--rules .rule img {
+          width: 11px;
+          margin-right: 20px;
+          position: relative;
+          top: -2px; }
+        .tariffes__tile--rules .rule:last-of-type {
+          margin-bottom: 0; }
+    .tariffes__tile--price {
+      font-size: 20px;
+      color: #000;
+      margin-bottom: 29px; }
+      .tariffes__tile--price span {
+        font-size: 36px; }
+      .tariffes__tile--price .--old {
+        color: #6E69B2;
+        margin-right: 19px;
+        text-decoration: line-through; }
+      .tariffes__tile--price .--text {
+        font-size: 14px;
+        color: #706E7A;
+        letter-spacing: 0;
+        line-height: 20px; }
+    .tariffes__tile button {
+      margin-top: auto; }
+
 .tile-item {
   background: white;
   border-radius: 12px;

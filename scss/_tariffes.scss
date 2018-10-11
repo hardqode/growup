@@ -1,0 +1,106 @@
+.tariffes{
+  background-image: linear-gradient(-180deg, #3B35A5 0%, #3DD89D 100%);
+  padding-bottom: 18px;
+  padding-top: 54px;
+
+  &__title{
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: -0.5px;
+    text-align: center;
+    line-height: 48px;
+    margin-bottom: 19px;
+  }
+  &__text{
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 72px;
+  }
+  &__tile{
+    padding: 36px 37px 40px 38px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 22px 0 rgba(0,0,0,0.12);
+    border-radius: 10px;
+    margin-bottom: 36px;
+    min-height:436px;
+    display:flex;
+    flex-direction:column;
+    &--title{
+      font-size: 24px;
+      font-weight: bold;
+      color: #07041A;
+      letter-spacing: 0;
+      line-height: 32px;
+      margin-bottom: 13px;
+      &.mb-27{
+        margin-bottom: 27px;
+      }
+    }
+    &--text{
+      font-size: 20px;
+      color: #07041A;
+      letter-spacing: 0;
+      line-height: 32px;
+      margin-bottom: 27px;
+      &.v2{
+        margin-bottom: 13px;
+        &:last-of-type{
+          margin-bottom: 32px;
+        }
+      }
+    }
+    .inline-radios{
+      margin-bottom: 32px;
+      label{
+        margin-bottom: 0;
+      }
+    }
+    &--rules{
+      padding-bottom: 32px;
+      border-bottom: 2px solid #EBEAF2;
+      margin-bottom: 24px;
+      .rule{
+        img{
+          width: 11px;
+          margin-right: 20px;
+          position: relative;
+          top: -2px;
+        }
+        font-size: 14px;
+        color: #706E7A;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-bottom: 20px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+    &--price{
+      font-size: 20px;
+      color: #000;
+      margin-bottom: 29px;
+      span{
+        font-size: 36px;
+      }
+      .--old{
+        color:#6E69B2;
+        margin-right: 19px;
+        text-decoration: line-through;
+      }
+      .--text{
+        font-size: 14px;
+        color: #706E7A;
+        letter-spacing: 0;
+        line-height: 20px;
+      }
+    }
+    button{
+      margin-top:auto;
+    }
+  }
+}
