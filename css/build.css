@@ -1382,6 +1382,46 @@ footer .footer-container {
     .tariffes__tile button {
       margin-top: auto; }
 
+.faq-section {
+  padding-top: 55px;
+  padding-bottom: 25px; }
+
+.faq-item {
+  position: relative;
+  padding-bottom: 38px;
+  border-bottom: 2px solid #EBEAF2;
+  margin-bottom: 30px; }
+  .faq-item__title {
+    font-size: 24px;
+    color: #3DD89D;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 32px;
+    width: 735px;
+    display: block;
+    transition: all .2s; }
+    .faq-item__title:hover {
+      color: #3B35A5;
+      text-decoration: none; }
+    .faq-item__title[aria-expanded="true"] {
+      margin-bottom: 17px; }
+  .faq-item__arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px; }
+    .faq-item__arrow[aria-expanded="true"] {
+      transform: scale(1, -1); }
+  .faq-item__content {
+    width: 735px;
+    font-size: 20px;
+    color: #07041A;
+    letter-spacing: 0;
+    line-height: 32px; }
+
 .tile-item {
   background: white;
   border-radius: 12px;
