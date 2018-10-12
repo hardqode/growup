@@ -31,7 +31,16 @@
       top: 19px;
     }
   }
-
+  .text{
+    font-size: 20px;
+    color: #07041A;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-bottom: 32px;
+    &.font-weight-bold{
+      font-weight: 500 !important;
+    }
+  }
   .input-form {
     margin-bottom: 16px;
 
@@ -44,6 +53,9 @@
   }
   button {
     margin-bottom: 21px;
+    &.mb-5{
+      margin-bottom: 47px !important;
+    }
   }
   .checkbox-form {
     padding-left: 25px;

@@ -1,0 +1,57 @@
+.social-blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item {
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 165px;
+    padding-left: 15px;
+    padding-right: 20px;
+    transition: all .2s;
+    margin-bottom: 16px;
+    &:hover {
+      text-decoration: none;
+      color: white;
+      &.vk {
+        background: darken(#507299, 4);
+      }
+      &.fb {
+        background: darken(#365899, 4);
+      }
+      &.twitter {
+        background: darken(#1DA1F2, 4);
+      }
+      &.tg {
+        background: darken(#35A6DE, 4);
+      }
+    }
+    .icon {
+      width: 20px;
+      text-align: center;
+    }
+    &.vk {
+      background: #507299;
+    }
+    &.fb {
+      background: #365899;
+
+    }
+    &.twitter {
+      background: #1DA1F2;
+
+    }
+    &.tg {
+      background: #35A6DE;
+
+    }
+  }
+
+}
