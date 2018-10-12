@@ -1384,6 +1384,106 @@ footer .footer-container {
     .tariffes__tile button {
       margin-top: auto; }
 
+.events-section {
+  padding-top: 48px;
+  padding-bottom: 40px; }
+  .events-section .city-select__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px; }
+    .events-section .city-select__container .button.btn-grn-outline {
+      font-size: 14px;
+      width: 252px;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 56px; }
+  .events-section .city-select {
+    display: flex;
+    align-items: center; }
+    .events-section .city-select span {
+      font-size: 14px;
+      font-weight: 500;
+      color: #07041A;
+      line-height: 20px;
+      margin-right: 13px;
+      text-transform: uppercase; }
+    .events-section .city-select .change-city {
+      height: 55px;
+      width: 145px;
+      padding-left: 24px;
+      padding-top: 16px;
+      padding-bottom: 17px;
+      border-radius: 29px; }
+      .events-section .city-select .change-city__title {
+        font-size: 14px; }
+        .events-section .city-select .change-city__title:after {
+          width: 17px;
+          height: 12px; }
+  .events-section .tile {
+    margin-bottom: 24px;
+    border-radius: 10px;
+    background: white;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    transition: all .2s; }
+    .events-section .tile:hover {
+      box-shadow: 0 3px 22px 0 rgba(0, 0, 0, 0.12); }
+      .events-section .tile:hover .tile__img-block img {
+        opacity: .5; }
+      .events-section .tile:hover .tile__img-block .hover {
+        opacity: 1; }
+      .events-section .tile:hover .tile__text-block .title {
+        color: #3B35A5; }
+    .events-section .tile__img-block {
+      width: 100%;
+      position: relative; }
+      .events-section .tile__img-block img {
+        width: 100%;
+        max-width: 100%; }
+      .events-section .tile__img-block .hover {
+        background: rgba(59, 53, 165, 0.5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        opacity: 0;
+        transition: all .2s; }
+    .events-section .tile__text-block {
+      border: 1px solid #EBEAF2;
+      border-top: 0;
+      padding: 34px 50px 41px;
+      display: flex;
+      flex-direction: column;
+      min-height: 349px;
+      border-radius: 0 0 10px  10px; }
+      .events-section .tile__text-block .date {
+        font-size: 14px;
+        font-weight: 500;
+        color: #3B35A5;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-bottom: 19px;
+        text-transform: uppercase; }
+      .events-section .tile__text-block .title {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 21px;
+        color: #07041A;
+        letter-spacing: -0.5px;
+        transition: all .2s;
+        line-height: 48px; }
+      .events-section .tile__text-block .text {
+        font-size: 14px;
+        color: #07041A;
+        letter-spacing: 0;
+        line-height: 20px; }
+      .events-section .tile__text-block .btn-block {
+        margin-top: auto; }
+        .events-section .tile__text-block .btn-block button {
+          height: 56px;
+          width: 210px; }
+
 .faq-section {
   padding-top: 55px;
   padding-bottom: 25px; }
