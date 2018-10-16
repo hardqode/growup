@@ -1,0 +1,46 @@
+.passed-event {
+  &__row{
+    margin-bottom: 64px;
+  }
+  &__year {
+    font-size: 36px;
+    font-weight: bold;
+    color: #07041A;
+    letter-spacing: -0.5px;
+    line-height: 48px;
+    margin-bottom: 35px;
+  }
+  &__month {
+    font-weight: 500;
+    font-size: 14px;
+    color: #3B35A5;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+  }
+
+  &__list {
+    margin-bottom: 48px;
+    list-style: none;
+    padding-left: 25px;
+    li{
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 32px;
+      margin-bottom: 32px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+      a{
+        color: #3DD89D;
+        font-weight: 300;
+        &:hover{
+          text-decoration: none;
+          color: #3B35A5;
+        }
+      }
+    }
+
+  }
+}

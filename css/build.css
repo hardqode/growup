@@ -1298,6 +1298,61 @@ footer .footer-container {
       footer .footer-container .footer-map {
         width: 100%; } }
 
+.blog-tile {
+  width: 100%;
+  margin-bottom: 52px;
+  cursor: pointer; }
+  .blog-tile__album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-height: 208px;
+    overflow: hidden;
+    margin-bottom: 24px; }
+    .blog-tile__album img {
+      width: 100%;
+      max-width: 100%; }
+    .blog-tile__album .author {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding-top: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-image: linear-gradient(0deg, rgba(7, 4, 26, 0) 56%, rgba(7, 4, 26, 0.7) 99%); }
+      .blog-tile__album .author img {
+        height: 41px;
+        width: 41px;
+        border-radius: 100%;
+        margin-right: 18px; }
+      .blog-tile__album .author span {
+        margin-top: 11px;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 20px; }
+        .blog-tile__album .author span:nth-of-type(1) {
+          font-weight: bold; }
+  .blog-tile__title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #07041A;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-bottom: 19px; }
+  .blog-tile__text {
+    font-size: 14px;
+    color: #706E7A;
+    letter-spacing: 0;
+    line-height: 20px; }
+  .blog-tile:hover .author {
+    background-image: linear-gradient(0deg, rgba(7, 4, 26, 0) 56%, rgba(59, 53, 165, 0.7) 99%); }
+  .blog-tile:hover .blog-tile__title {
+    color: #3DD89D; }
+
 .tariffes {
   background-image: linear-gradient(-180deg, #3B35A5 0%, #3DD89D 100%);
   padding-bottom: 18px;
@@ -1383,6 +1438,41 @@ footer .footer-container {
         line-height: 20px; }
     .tariffes__tile button {
       margin-top: auto; }
+
+.passed-event__row {
+  margin-bottom: 64px; }
+.passed-event__year {
+  font-size: 36px;
+  font-weight: bold;
+  color: #07041A;
+  letter-spacing: -0.5px;
+  line-height: 48px;
+  margin-bottom: 35px; }
+.passed-event__month {
+  font-weight: 500;
+  font-size: 14px;
+  color: #3B35A5;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 37px; }
+.passed-event__list {
+  margin-bottom: 48px;
+  list-style: none;
+  padding-left: 25px; }
+  .passed-event__list li {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-bottom: 32px; }
+    .passed-event__list li:last-of-type {
+      margin-bottom: 0; }
+    .passed-event__list li a {
+      color: #3DD89D;
+      font-weight: 300; }
+      .passed-event__list li a:hover {
+        text-decoration: none;
+        color: #3B35A5; }
 
 .social-blocks {
   display: flex;
