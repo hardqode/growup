@@ -1353,6 +1353,110 @@ footer .footer-container {
   .blog-tile:hover .blog-tile__title {
     color: #3DD89D; }
 
+.blog-view .social-blocks {
+  padding-top: 46px;
+  border-top: 2px solid #EBEAF2; }
+.blog-view .title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #07041A;
+  letter-spacing: -1px;
+  margin-bottom: 17px;
+  line-height: 66px; }
+.blog-view .subtitle {
+  font-weight: 200;
+  font-size: 32px;
+  color: #07041A;
+  letter-spacing: 0;
+  line-height: 44px;
+  margin-bottom: 68px; }
+  .blog-view .subtitle.bordered {
+    border-top: 4px solid #3DD89D;
+    border-bottom: 4px solid #3DD89D;
+    margin-bottom: 52px;
+    padding: 48px 50px 47px; }
+.blog-view .text {
+  margin-bottom: 49px;
+  font-size: 20px;
+  color: #07041A;
+  letter-spacing: 0;
+  line-height: 32px; }
+.blog-view .quote {
+  position: relative;
+  padding: 48px 41px 45px;
+  border-top: 4px solid #3DD89D;
+  border-bottom: 4px solid #3DD89D;
+  margin-bottom: 56px; }
+  .blog-view .quote__text {
+    margin-bottom: 23px;
+    font-size: 32px;
+    font-weight: 200;
+    color: #07041A;
+    letter-spacing: 0; }
+  .blog-view .quote:before {
+    content: '«';
+    position: absolute;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3DD89D;
+    letter-spacing: -0.5px;
+    line-height: 48px;
+    top: 42px;
+    left: 0; }
+.blog-view__info {
+  top: 89px; }
+  .blog-view__info .date {
+    border-top: 2px solid #EBEAF2; }
+    .blog-view__info .date span {
+      position: absolute;
+      width: 115px;
+      background: white;
+      font-weight: 500;
+      font-size: 14px;
+      color: #3B35A5;
+      letter-spacing: 0;
+      left: 0;
+      right: 0;
+      top: -9px;
+      margin: auto;
+      text-align: center;
+      line-height: 20px;
+      text-transform: uppercase; }
+  .blog-view__info .autor-info {
+    margin-bottom: 29px;
+    margin-top: 33px; }
+  .blog-view__info .social-blocks {
+    padding-top: 24px;
+    border-top: 2px solid #EBEAF2; }
+
+.autor-info {
+  display: flex;
+  align-items: center; }
+  .autor-info__avatar {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 71px;
+    height: 71px;
+    margin-right: 24px; }
+    .autor-info__avatar img {
+      width: 100%;
+      max-width: 100%; }
+  .autor-info__text {
+    width: 254px; }
+    .autor-info__text .name {
+      margin-bottom: 6px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #07041A;
+      letter-spacing: 0;
+      line-height: 29px; }
+    .autor-info__text .level {
+      font-size: 14px;
+      color: #706E7A;
+      letter-spacing: 0;
+      line-height: 20px;
+      min-height: 52px; }
+
 .tariffes {
   background-image: linear-gradient(-180deg, #3B35A5 0%, #3DD89D 100%);
   padding-bottom: 18px;

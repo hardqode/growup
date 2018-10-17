@@ -19,3 +19,5 @@ https://mskuroedov.github.io/growup/residents.html
 https://mskuroedov.github.io/growup/rooms.html
 *  Тарифы
 https://mskuroedov.github.io/growup/tariffs.html
+*  Страница блога
+https://mskuroedov.github.io/growup/blog-article.html
