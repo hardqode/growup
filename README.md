@@ -21,3 +21,5 @@ https://mskuroedov.github.io/growup/rooms.html
 https://mskuroedov.github.io/growup/tariffs.html
 *  Страница блога
 https://mskuroedov.github.io/growup/blog-article.html
+*  О нас
+https://mskuroedov.github.io/growup/about.html
