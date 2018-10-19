@@ -52,15 +52,16 @@
     &__img {
       width: 100%;
       position: relative;
-      &.mb {
-        margin-bottom: 74px;
+      &.pb {
+        padding-bottom: 74px;
       }
       img {
         max-width: 100%;
+        transition: transform .1s;
       }
       .logo {
         position: absolute;
-        bottom: -102px;
+        bottom: -28px;
         width: 165px;
         left: 0;
         right: 0;
@@ -140,6 +141,7 @@
   padding-bottom: 79px;
   background: #F8F7FA;
   flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .about-slider {
@@ -155,6 +157,9 @@
       color: #07041A;
       line-height: 66px;
       letter-spacing: -1px;
+      &.feedback {
+        margin-bottom: 53px;
+      }
     }
   }
   &__navs {
@@ -187,7 +192,44 @@
       background: #FFFFFF;
       border: 1px solid #EBEAF2;
       border-radius: 10px;
-
+      &.shadowed {
+        border: 0;
+        box-shadow: 0 3px 22px 0 rgba(0, 0, 0, 0.12);
+        margin: 10px 10px 25px;
+        ///* Читать весь отзыв: */
+        //font-family: Manrope-Regular;
+        //font-size: 14px;
+        //color: #3DD89D;
+        //letter-spacing: 0;
+        //line-height: 20px;
+        ///* Oval: */
+        //background: #D8D8D8;
+        ///* Ушанов: */
+        ///* «Кому нужно сфокусир: */
+        //font-family: Manrope-Regular;
+        //font-size: 20px;
+        //color: #07041A;
+        //letter-spacing: 0;
+        //line-height: 32px;
+        ///* vk_red: */
+        //background: #4A90E2;
+        a {
+          display: flex;
+          align-items: center;
+          img {
+            &.vk {
+              margin-right: 15px;
+              width: 19px !important;
+              height: 10px !important;
+            }
+            &.fb {
+              margin-right: 18px;
+              width: 8px !important;
+              height: 17px !important;
+            }
+          }
+        }
+      }
       .img {
         margin-bottom: 20px;
         height: 58px;
@@ -198,6 +240,25 @@
           width: auto !important;
           max-width: 100%;
         }
+      }
+      .name {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        img {
+          width: 61px;
+          height: 61px;
+          margin-right: 22px;
+        }
+        span {
+
+          font-weight: bold;
+          font-size: 20px;
+          color: #07041A;
+          letter-spacing: 0;
+          line-height: 32px;
+        }
+
       }
       .text {
         min-height: 128px;
