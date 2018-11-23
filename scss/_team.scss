@@ -3,6 +3,7 @@
   padding-bottom: 49px;
   &__title {
     display: flex;
+    flex-wrap: wrap;
     color: white;
     align-items: center;
     margin-bottom: 71px;
@@ -61,6 +62,12 @@
       padding: 35px 28px 35px 38px;
       border:1px solid #E8E8E8;
       border-top: 0;
+      @media(max-width: 991px) {
+        padding: 35px 28px;
+      };
+      @media(max-width: 767px) {
+        padding: 15px;
+      };
       .name{
         font-weight: 500;
         font-size: 24px;
@@ -68,6 +75,16 @@
         letter-spacing: 0;
         line-height: 32px;
         margin-bottom: 16px;
+        @media(max-width: 767px) {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 12px;
+        };
+        @media(max-width: 575px) {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 16px;
+        }
       }
       .level{
         font-size: 14px;

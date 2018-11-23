@@ -15,6 +15,12 @@
     border-bottom: 2px solid #D1CEF4;
     margin-bottom: 32px;
     padding-right: 108px;
+    @media(max-width: 767px){
+      padding-right: 0;
+    };
+    @media(max-width: 575px){
+      font-size: 24px;
+    };
   }
   .cost-block {
     padding-bottom: 32px;
@@ -48,19 +54,38 @@
     line-height: 48px;
     margin-bottom: 44px;
     font-weight: bold;
+    @media(max-width: 575px){
+      font-size: 24px;
+    };
   }
   .svg-tiles {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     &__item {
       width: 181px;
       text-align: center;
       margin-right: auto;
+      @media(max-width: 767px){
+        width: 150px;
+      };
+      @media(max-width: 575px){
+        width: 250px;
+        margin-left: auto;
+      };
       &:nth-of-type(3n+1) {
         margin-right: 64px;
+        @media(max-width: 1200px){
+          margin-right: auto;
+        };
+        @media(max-width: 575px){
+          margin-left: auto;
+        };
       }
       &:nth-of-type(3n) {
         margin-right: 0;
+        @media(max-width: 575px){
+          margin-right: auto;
+        };
       }
       .img {
         margin-bottom: 32px;

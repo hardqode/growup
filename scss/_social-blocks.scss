@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media (max-width: 374px) {
+    justify-content: center;
+  };
   &__item {
     font-size: 14px;
     color: #FFFFFF;

@@ -57,6 +57,11 @@
     padding-left: 40px;
     padding-right: 103px;
     padding-bottom: 40px;
+    @media(max-width: 575px){
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+    };
     &__text {
       font-size: 14px;
       color: #706E7A;
@@ -74,6 +79,7 @@
       @media(max-width:991px){
         white-space: nowrap;
         font-size: 20px;
+        line-height: 28px;
       }
       .price{
         transform: translateX(-200px);

@@ -27,8 +27,11 @@
     border-radius: 10px;
     margin-bottom: 36px;
     min-height:436px;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
+    @media(max-width: 575px){
+      padding: 20px;
+    };
     &--title{
       font-size: 24px;
       font-weight: bold;
@@ -55,8 +58,15 @@
     }
     .inline-radios{
       margin-bottom: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
       label{
         margin-bottom: 0;
+        @media(max-width: 575px){
+          width: 100%;
+          margin-bottom: 10px;
+          border-right: 1px solid;
+        };
       }
     }
     &--rules{
@@ -86,6 +96,9 @@
       margin-bottom: 29px;
       span{
         font-size: 36px;
+        @media(max-width: 575px){
+          font-size: 32px;
+        };
       }
       .--old{
         color:#6E69B2;

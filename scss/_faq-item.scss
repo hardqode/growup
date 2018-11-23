@@ -14,9 +14,12 @@
     font-weight: 500;
     letter-spacing: 0;
     line-height: 32px;
-    width: 735px;
+    max-width: 735px;
     display: block;
     transition: all .2s;
+    @media (max-width: 991px) {
+      padding-right: 35px;
+    };
     &:hover {
       color: #3B35A5;
       text-decoration: none;
@@ -40,10 +43,13 @@
   }
 
   &__content {
-    width: 735px;
+    max-width: 735px;
     font-size: 20px;
     color: #07041A;
     letter-spacing: 0;
     line-height: 32px;
+    @media (max-width: 991px) {
+      padding-right: 35px;
+    };
   }
 }

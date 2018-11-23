@@ -2,6 +2,21 @@
   padding-top: 55px;
   @media(max-width: 991px){
     padding-top: 28px;
+  };
+  .inline-radios {
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item{
+      @media(max-width: 991px){
+        margin: 0 8px 16px 8px;
+        border-right: 1px solid #3DD89D;
+      };
+      &:first-of-type {
+        @media(max-width: 991px){
+          margin-left: 8px;
+        };
+      }
+    }
   }
 }
 
@@ -204,6 +219,7 @@
         display: none;
       }
       width: 445px;
+      max-width: 100%;
       font-size: 14px;
       font-weight: 300;
       color: $black;

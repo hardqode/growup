@@ -8,6 +8,9 @@
     letter-spacing: -1.5px;
     line-height: 30px;
     margin-bottom: 61px;
+    @media(max-width: 575px){
+      font-size: 32px;
+    };
   }
   .why__text {
     font-size: 20px;
@@ -23,11 +26,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @media(max-width: 991px){
+      margin-top: 45px;
+    };
     &__item {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 35px;
+      @media(max-width: 575px){
+        width: 100%;
+      };
       .img {
         img {
           max-width: 100%;
@@ -207,6 +216,9 @@
     padding-bottom: 35px;
     height: 243px;
     padding-left: 31px;
+    @media(max-width: 991px){
+      height: auto;
+    };
   }
   .tile-item__text__title {
     color: #706E7A;
@@ -214,6 +226,7 @@
     font-weight: normal;
     line-height: 20px;
     margin-bottom: 16px;
+    white-space: normal;
   }
   .tile-item__text__text {
     font-size: 14px;

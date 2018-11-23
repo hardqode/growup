@@ -3,6 +3,12 @@
   padding: 34px 48px 34px 40px;
   top: 89px;
   margin-bottom: 16px;
+  @media(max-width: 1200px){
+    padding: 34px 20px 34px 20px;
+  };
+  @media(max-width: 374px){
+    width: 100vw;
+  };
   .close-form {
     display: none;
   }
@@ -65,9 +71,12 @@
   }
   .date-time-row {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 24px;
     &__item {
-      margin-right: 16px;
+      display: flex;
+      flex-direction: column;
+      width: calc(33.3% - 16px);
       &:last-of-type{
         margin-right: 0;
       }
@@ -82,6 +91,7 @@
       input {
         height: 40px;
         width: 110px;
+        max-width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
         background: white;

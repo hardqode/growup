@@ -3,6 +3,7 @@
   padding-bottom: 40px;
   .city-select__container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 48px;
     .button.btn-grn-outline {
@@ -11,6 +12,9 @@
       padding-left: 15px;
       padding-right: 15px;
       height: 56px;
+      @media (max-width: 575px) {
+        width: 100%;
+      };
     }
   }
   .city-select {
@@ -92,6 +96,12 @@
       flex-direction: column;
       min-height: 349px;
       border-radius: 0 0 10px 10px;
+      @media (max-width: 1200px) {
+        padding: 34px 30px 41px;
+      };
+      @media (max-width: 575px) {
+        padding: 34px 15px 41px;
+      };
       .date {
         font-size: 14px;
         font-weight: 500;
@@ -109,6 +119,10 @@
         letter-spacing: -0.5px;
         transition: all .2s;
         line-height: 48px;
+        @media (max-width: 575px) {
+          font-size: 24px;
+          line-height: 32px;
+        };
       }
       .text {
         font-size: 14px;
@@ -118,6 +132,9 @@
       }
       .btn-block {
         margin-top: auto;
+        @media (max-width: 575px) {
+          margin-top: 25px;
+        };
         button {
           height: 56px;
           width: 210px;
@@ -134,9 +151,21 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  img {
-    max-width: 100%;
-    width: 100%;
+  @media (max-width: 767px) {
+    height: 300px;
+  };
+  img {    
+    @media (max-width: 1200px) {
+      width: auto;
+      height: 480px;
+    };
+    @media (max-width: 767px) {
+      height: 300px;
+    };
+    @media (min-width: 1200px) {
+      max-width: 100%;
+      width: 100%;
+    };
   }
 }
 
@@ -148,6 +177,10 @@
     color: #07041A;
     letter-spacing: -1px;
     margin-bottom: 26px;
+    @media (max-width: 575px) {
+      font-size: 32px;
+      height: auto;
+    };
 
   }
   .subtitle {
@@ -167,7 +200,7 @@
     margin-bottom: 32px;
   }
   .social-blocks {
-    width: 735px;
+    max-width: 735px;
     padding-top: 46px;
     margin-top: 19px;
     border-top: 2px solid #EBEAF2;
@@ -190,6 +223,9 @@
   &__text {
     width: 475px;
     margin-right: -25px;
+    @media (max-width: 575px) {
+      width: auto;
+    };
     .name {
       font-weight: bold;
       font-size: 20px;
@@ -197,6 +233,10 @@
       letter-spacing: 0;
       line-height: 29px;
       margin-bottom: 24px;
+      @media (max-width: 575px) {
+        font-size: 18px;
+        line-height: 24px;
+      };
     }
     .text {
       font-size: 20px;
@@ -204,6 +244,10 @@
       letter-spacing: 0;
       line-height: 32px;
       margin-bottom: 0;
+      @media (max-width: 575px) {
+        font-size: 18px;
+        line-height: 24px;
+      };
     }
   }
 }

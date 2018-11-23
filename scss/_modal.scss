@@ -1,4 +1,14 @@
 .modal-form{
   width: 450px;
+  @media(max-width: 475px){
+    width: 100vw;
+    margin: 0;
+    .call-back-form__title {
+    	padding-right: 25px;
+    }
+  };
+  .call-back-form {
+  	top: 0;
+  }
 
 }

@@ -10,13 +10,11 @@
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    .bg-block{
-
-    }
+    .bg-block{}  
     img {
       max-width: 100%;
       width: 100%;
-    }
+    }  
     .dots{
       position: absolute;
       bottom: 45px;
@@ -111,7 +109,27 @@
     display: none;
   }
   .item {
-    position: relative;
+    position: relative;    
+    .bg-block{      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      @media(max-width: 767px) {
+        height: 200px;
+        img {
+          width: auto;
+          height: 200px;
+        }
+      };
+      @media(min-width: 768px) {
+        height: auto;
+        img {
+          max-width: 100%;
+          width: 100%;
+        }
+      };
+    } 
     img {
       max-width: 100%;
       width: 100%;
