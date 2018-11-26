@@ -114,14 +114,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
-      @media(max-width: 767px) {
-        height: 200px;
-        img {
-          width: auto;
-          height: 200px;
-        }
-      };
+      overflow: hidden;      
       @media(min-width: 768px) {
         height: auto;
         img {
@@ -129,9 +122,16 @@
           width: 100%;
         }
       };
+      @media(max-width: 767px) {
+        height: 200px;
+        img {
+          width: auto;
+          height: 200px;
+        }
+      };
     } 
     img {
-      max-width: 100%;
+      /*max-width: 100%;*/
       width: 100%;
     }
     .text {
@@ -197,9 +197,15 @@
       }
       &.btn-left {
         left: 0;
-      }
+        @media(max-width: 575px) {
+          left: 10px;
+        }
+      };
       &.btn-right {
         right: 0;
+        @media(max-width: 575px) {
+          right: 10px;
+        }      
       }
     }
   }
