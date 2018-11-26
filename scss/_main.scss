@@ -194,7 +194,9 @@
     font-weight: bold;
     height: 66px;
     margin-bottom: 16px;
-
+    @media(max-width: 575px) {
+      font-size: 40px;
+    }
   }
   .text {
     font-size: 20px;
