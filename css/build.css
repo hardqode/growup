@@ -2067,6 +2067,10 @@ footer .footer-container {
   .team-tiles-upper {
     -webkit-transform: translateY(-65px);
             transform: translateY(-65px); }
+    @media (max-width: 575px) {
+      .team-tiles-upper {
+        -webkit-transform: translateY(0);
+                transform: translateY(0); } }
 
 .tariffes {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3B35A5), to(#3DD89D));

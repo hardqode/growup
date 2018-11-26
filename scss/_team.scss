@@ -97,5 +97,8 @@
   }
   &-tiles-upper{
     transform: translateY(-65px);
+    @media(max-width: 575px) {
+      transform: translateY(0);
+    }
   }
 }
