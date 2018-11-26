@@ -16,7 +16,7 @@ body {
   position: relative;
   padding-top: 73px;
   @media(max-width: 575px) {
-    max-width: 100vw;
+    width: 100vw;
     overflow-x: hidden;
   }
 }
